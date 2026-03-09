@@ -17,6 +17,14 @@
   },
   {
     "source": "rss",
+    "title": "acp: fail honestly in bridge mode (#41424)",
+    "link": "https://github.com/openclaw/openclaw/commit/e6e4169e82536d9298002cd58a5f34d0a34c3be8",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">acp: fail honestly in bridge mode (#41424)\n\nMerged via squash.\n\nPrepared head SHA: b5e6e13afe917f47e0bb303159430930591c0c87\nCo-authored-by: mbelinky &lt;132747814+mbelinky@users.noreply.github.com&gt;\nCo-authored-by: mbelinky &lt;132747814+mbelinky@users.noreply.github.com&gt;\nReviewed-by: @mbelinky</pre>",
+    "published": "2026-03-09T21:01:30",
+    "category": "general"
+  },
+  {
+    "source": "rss",
     "title": "Gateway: tighten node pending drain semantics (#41429)",
     "link": "https://github.com/openclaw/openclaw/commit/1bc59cc09df21d65e817791eaec58ebd707d6e50",
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Gateway: tighten node pending drain semantics (#41429)\n\nMerged via squash.\n\nPrepared head SHA: 361c2eb5c84e3b532862d843536ca68b21336fb2\nCo-authored-by: mbelinky &lt;132747814+mbelinky@users.noreply.github.com&gt;\nCo-authored-by: mbelinky &lt;132747814+mbelinky@users.noreply.github.com&gt;\nReviewed-by: @mbelinky</pre>",
@@ -158,14 +166,6 @@
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(swiftformat): exclude HostEnvSecurityPolicy.generated.swift from formatters (#39969)</pre>",
     "published": "2026-03-09T14:30:43",
     "category": "bugfix"
-  },
-  {
-    "source": "rss",
-    "title": "fix(kimi-coding): fix kimi tool format: use native Anthropic tool sch…",
-    "link": "https://github.com/openclaw/openclaw/commit/51bae75120485d305b0bac00d59a2d80280590c2",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(kimi-coding): fix kimi tool format: use native Anthropic tool schema instead of OpenAI … (openclaw#40008)\n\nVerified:\n- pnpm install --frozen-lockfile\n- pnpm build\n- pnpm check\n- pnpm test:macmini\n\nCo-authored-by: opriz &lt;51957849+opriz@users.noreply.github.com&gt;\nCo-authored-by: Tak Hoffman &lt;781889+Takhoffman@users.noreply.github.com&gt;</pre>",
-    "published": "2026-03-09T13:28:47",
-    "category": "skill"
   },
   {
     "source": "youtube",

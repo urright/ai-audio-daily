@@ -7,7 +7,7 @@ from gtts import gTTS
 import concurrent.futures
 
 class AudioGenerator:
-    def __init__(self, output_dir="data/audio"):
+    def __init__(self, output_dir="public/audio"):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.lang = 'zh-cn'  # gTTS语言代码
