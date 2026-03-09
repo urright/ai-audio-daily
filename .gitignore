@@ -1,0 +1,39 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+*.mo
+*.pot
+*.log
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# 项目数据
+data/raw.json
+data/processed.json
+data/audio/*
+!data/audio/.gitkeep
+.env
+*.mp3
+
+# 部署
+public/*
+!public/.gitkeep
+/logs/*
+!logs/.gitkeep

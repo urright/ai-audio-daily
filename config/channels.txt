@@ -1,0 +1,8 @@
+# OpenClaw 相关 YouTube 频道
+# 可以先留空或添加已知频道
+# https://www.youtube.com/@OpenClawAI
+# https://www.youtube.com/@ClawHub
+
+# 补充：AI领域通用频道
+https://www.youtube.com/@OpenAI
+https://www.youtube.com/@GoogleAI
