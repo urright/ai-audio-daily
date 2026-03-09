@@ -31,7 +31,7 @@ DETAIL_TEMPLATE = """
         <h1>🎧 OpenClaw 生态日报</h1>
         <p>{{ date }} · 共收集 {{ total_items }} 条动态</p>
         <p><a href="#audio-summary" style="color: white;">▶️ 收听语音摘要</a></p>
-        <p style="margin-top: 10px;"><a href="/" style="color: white;">📋 返回主页</a></p>
+        <p style="margin-top: 10px;"><a href="../index.html" style="color: white;">📋 返回主页</a></p>
     </div>
 
     {% for category, entries in categorized.items() %}
