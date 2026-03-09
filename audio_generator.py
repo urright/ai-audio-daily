@@ -24,8 +24,12 @@ class AudioGenerator:
             print(f"❌ gTTS error: {e}")
             return None
 
-    async def generate_summary_audio(self, categorized_data, max_entries_per_category=5):
-        """生成完整语音摘要（单一文件）"""
+    async def generate_summary_audio(self, categorized_data, audio_filename=None, max_entries_per_category=5):
+        """生成完整语音摘要（单一文件）
+        
+        Args:
+            audio_filename: 可选，自定义文件名（如 2026-03-09.mp3）
+        """
         print("🎵 开始生成语音...")
 
         # 构建完整文本
@@ -35,10 +39,12 @@ class AudioGenerator:
             print("❌ 没有内容可生成")
             return None
 
-        # 生成单一音频文件
-        filename = "daily_summary.mp3"
-        output_path = self.output_dir / filename
+        # 确定文件名
+        if not audio_filename:
+            audio_filename = "daily_summary.mp3"
+        output_path = self.output_dir / audio_filename
         
+        # 生成音频
         loop = asyncio.get_event_loop()
         result = await loop.run_in_executor(
             self.thread_pool,

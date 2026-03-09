@@ -17,6 +17,46 @@
   },
   {
     "source": "rss",
+    "title": "Gateway: tighten node pending drain semantics (#41429)",
+    "link": "https://github.com/openclaw/openclaw/commit/1bc59cc09df21d65e817791eaec58ebd707d6e50",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Gateway: tighten node pending drain semantics (#41429)\n\nMerged via squash.\n\nPrepared head SHA: 361c2eb5c84e3b532862d843536ca68b21336fb2\nCo-authored-by: mbelinky &lt;132747814+mbelinky@users.noreply.github.com&gt;\nCo-authored-by: mbelinky &lt;132747814+mbelinky@users.noreply.github.com&gt;\nReviewed-by: @mbelinky</pre>",
+    "published": "2026-03-09T20:56:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Gateway: add pending node work primitives (#41409)",
+    "link": "https://github.com/openclaw/openclaw/commit/ef95975411a9a53084c91f6a123759eb42fb032c",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Gateway: add pending node work primitives (#41409)\n\nMerged via squash.\n\nPrepared head SHA: a6d7ca90d71a33c6d634a6396d1e7ae40545ea66\nCo-authored-by: mbelinky &lt;132747814+mbelinky@users.noreply.github.com&gt;\nCo-authored-by: mbelinky &lt;132747814+mbelinky@users.noreply.github.com&gt;\nReviewed-by: @mbelinky</pre>",
+    "published": "2026-03-09T20:42:57",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "fix(auth): reset cooldown error counters on expiry to prevent infinit…",
+    "link": "https://github.com/openclaw/openclaw/commit/5f90883ad378920249160fe2d9c610c362be765c",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(auth): reset cooldown error counters on expiry to prevent infinite escalation (#41028)\n\nMerged via squash.\n\nPrepared head SHA: 89bd83f09a141f68c0cd715a3652559ad04be7c6\nCo-authored-by: zerone0x &lt;39543393+zerone0x@users.noreply.github.com&gt;\nCo-authored-by: altaywtf &lt;9790196+altaywtf@users.noreply.github.com&gt;\nReviewed-by: @altaywtf</pre>",
+    "published": "2026-03-09T20:40:11",
+    "category": "bugfix"
+  },
+  {
+    "source": "rss",
+    "title": "fix(cron): do not misclassify empty/NO_REPLY as interim acknowledgeme…",
+    "link": "https://github.com/openclaw/openclaw/commit/2b2e5e203823a9ad9a31aaf47b170c92b1d0467e",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(cron): do not misclassify empty/NO_REPLY as interim acknowledgement (#41401)\n\n* fix(cron): do not misclassify empty/NO_REPLY as interim acknowledgement\n\nWhen a cron task's agent returns NO_REPLY, the payload filter strips the\nsilent token, leaving an empty text string. isLikelyInterimCronMessage()\npreviously returned true for empty input, causing the cron runner to\ninject a forced rerun prompt ('Your previous response was only an\nacknowledgement...').\n\nChange the empty-string branch to return false: empty text after payload\nfiltering means the agent deliberately chose silent completion, not that\nit sent an interim 'on it' message.\n\nFixes #41246\n\n* fix(cron): do not misclassify empty/NO_REPLY as interim acknowledgement\n\nFixes #41246. (#41383) thanks @jackal092927.\n\n---------\n\nCo-authored-by: xaeon2026 &lt;xaeon2026@gmail.com&gt;</pre>",
+    "published": "2026-03-09T20:16:28",
+    "category": "skill"
+  },
+  {
+    "source": "rss",
+    "title": "iOS: reconnect gateway on foreground return (#41384)",
+    "link": "https://github.com/openclaw/openclaw/commit/0bcddb3d4f093a25d616e5f82a37b7c7d7cb038e",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">iOS: reconnect gateway on foreground return (#41384)\n\nMerged via squash.\n\nPrepared head SHA: 0e2e0dcc36fb90e92342430198f82f9594c8caf3\nCo-authored-by: mbelinky &lt;132747814+mbelinky@users.noreply.github.com&gt;\nCo-authored-by: mbelinky &lt;132747814+mbelinky@users.noreply.github.com&gt;\nReviewed-by: @mbelinky</pre>",
+    "published": "2026-03-09T20:12:23",
+    "category": "general"
+  },
+  {
+    "source": "rss",
     "title": "Doctor: fix non-interactive cron repair gating (#41386)",
     "link": "https://github.com/openclaw/openclaw/commit/d86647d7dbcbde03f549490450f148d159785161",
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Doctor: fix non-interactive cron repair gating (#41386)</pre>",
@@ -126,46 +166,6 @@
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(kimi-coding): fix kimi tool format: use native Anthropic tool schema instead of OpenAI … (openclaw#40008)\n\nVerified:\n- pnpm install --frozen-lockfile\n- pnpm build\n- pnpm check\n- pnpm test:macmini\n\nCo-authored-by: opriz &lt;51957849+opriz@users.noreply.github.com&gt;\nCo-authored-by: Tak Hoffman &lt;781889+Takhoffman@users.noreply.github.com&gt;</pre>",
     "published": "2026-03-09T13:28:47",
     "category": "skill"
-  },
-  {
-    "source": "rss",
-    "title": "fix(ui): preserve control-ui auth across refresh (#40892)",
-    "link": "https://github.com/openclaw/openclaw/commit/f2f561fab1bf3808baed61ebdd55ec3bfe3c8b65",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(ui): preserve control-ui auth across refresh (#40892)\n\nMerged via squash.\n\nPrepared head SHA: f9b2375892485e91c838215b8880d54970179153\nCo-authored-by: velvet-shark &lt;126378+velvet-shark@users.noreply.github.com&gt;\nCo-authored-by: velvet-shark &lt;126378+velvet-shark@users.noreply.github.com&gt;\nReviewed-by: @velvet-shark</pre>",
-    "published": "2026-03-09T11:50:47",
-    "category": "bugfix"
-  },
-  {
-    "source": "rss",
-    "title": "build: sync plugin versions for 2026.3.9",
-    "link": "https://github.com/openclaw/openclaw/commit/f6d0712f508b1f926ad6fc42f7d07b1a60e62730",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">build: sync plugin versions for 2026.3.9</pre>",
-    "published": "2026-03-09T08:39:52",
-    "category": "release"
-  },
-  {
-    "source": "rss",
-    "title": "fix: stabilize launchd paths and appcast secret scan",
-    "link": "https://github.com/openclaw/openclaw/commit/6c579d7842b537115d1354765dc945f894ebf899",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: stabilize launchd paths and appcast secret scan</pre>",
-    "published": "2026-03-09T08:37:37",
-    "category": "bugfix"
-  },
-  {
-    "source": "rss",
-    "title": "build: bump unreleased version to 2026.3.9",
-    "link": "https://github.com/openclaw/openclaw/commit/f9706fde6aee29c2523b7258f3c84fba7000705c",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">build: bump unreleased version to 2026.3.9</pre>",
-    "published": "2026-03-09T08:33:58",
-    "category": "release"
-  },
-  {
-    "source": "rss",
-    "title": "fix(onboard): avoid persisting talk fallback on fresh setup",
-    "link": "https://github.com/openclaw/openclaw/commit/7217b9765833f4e9bc1c7b6c10218be8f9ad9e50",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(onboard): avoid persisting talk fallback on fresh setup</pre>",
-    "published": "2026-03-09T08:33:58",
-    "category": "bugfix"
   },
   {
     "source": "youtube",

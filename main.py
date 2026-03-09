@@ -2,7 +2,6 @@
 import asyncio
 import json
 import os
-import subprocess
 from pathlib import Path
 from datetime import datetime
 
@@ -16,6 +15,8 @@ class AIAudioDailyAgent:
     def __init__(self):
         self.data_dir = Path("data")
         self.public_dir = Path("public")
+        self.history_dir = Path("history")
+        self.history_dir.mkdir(exist_ok=True)
 
         # 组件
         self.collector = DataCollector()
@@ -26,7 +27,7 @@ class AIAudioDailyAgent:
 
     async def run(self):
         print("="*50)
-        print("🤖 AI 办公自动化日报 Agent 开始运行")
+        print("🤖 OpenClaw 日报 Agent 开始运行")
         print(f"⏰ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         print("="*50)
 
@@ -39,35 +40,49 @@ class AIAudioDailyAgent:
 
             # 2. 处理数据（总结+分类）
             categorized = self.processor.process_all(entries)
+            total_items = sum(len(v) for v in categorized.values())
 
-            # 3. 生成语音
-            audio_file = await self.audio_gen.generate_summary_audio(categorized)
+            # 3. 生成语音（使用日期命名）
+            date_str = datetime.now().strftime("%Y-%m-%d")
+            audio_filename = f"{date_str}.mp3"
+            audio_file = await self.audio_gen.generate_summary_audio(
+                categorized,
+                audio_filename=audio_filename  # 传递自定义文件名
+            )
             if not audio_file:
                 print("❌ 语音生成失败")
                 return False
 
-            # 4. 生成HTML页面
-            page_file = self.page_gen.generate(
+            # 4. 保存今日数据到历史记录
+            history_file = self.history_dir / f"{date_str}.json"
+            with open(history_file, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'date': date_str,
+                    'total_items': total_items,
+                    'categories': {k: len(v) for k, v in categorized.items()},
+                    'entries': categorized,
+                    'audio': audio_filename,
+                    'generated_at': datetime.now().isoformat()
+                }, f, indent=2, ensure_ascii=False)
+            print(f"✅ 历史数据已保存: {history_file}")
+
+            # 5. 生成详情页（保存到 archive/YYYY-MM-DD/index.html）
+            self.page_gen.generate_detail_page(
                 categorized,
-                audio_filename=Path(audio_file).name,
-                output_path=str(self.public_dir / "index.html")
+                date_str=date_str,
+                audio_filename=audio_filename
             )
 
-            # 5. 计算总数
-            total = sum(len(v) for v in categorized.values())
+            # 6. 生成主页（汇总所有历史）
+            await self._generate_homepage()
 
-            # 6. 部署页面（GitHub Pages）
-            page_url = await self._deploy_page_github_pages(page_file)
-            if not page_url:
-                print("⚠️ 部署失败，使用本地路径")
-                page_url = f"file://{os.path.abspath(page_file)}"
-
-            # 7. 发送到Telegram
+            # 7. 发送到Telegram（发送主页链接）
+            page_url = "https://urright.github.io/ai-audio-daily/"
             if self.telegram.bot_token and self.telegram.chat_id:
                 self.telegram.send_daily_report(
                     page_url=page_url,
                     audio_path=audio_file,
-                    total_items=total
+                    total_items=total_items
                 )
             else:
                 print("⚠️ Telegram配置缺失，跳过推送")
@@ -81,35 +96,59 @@ class AIAudioDailyAgent:
             traceback.print_exc()
             return False
 
-    async def _deploy_page_github_pages(self, html_path):
-        """部署到GitHub Pages（需要预先配置git）"""
-        try:
-            # 方案：git add/commit/push 到 gh-pages 分支或 docs 文件夹
-            repo_dir = Path(".").resolve()
-            subprocess.run(["git", "add", html_path], check=True, cwd=repo_dir)
-            subprocess.run(["git", "commit", "-m", f"Update daily report {datetime.now().date()}"],
-                          check=False, cwd=repo_dir)  # 可能没有变化
-            subprocess.run(["git", "push"], check=False, cwd=repo_dir)
-            print("✅ 页面已推送到GitHub")
+    async def _generate_homepage(self):
+        """扫描历史数据，生成主页"""
+        # 读取所有历史文件
+        history_files = sorted(self.history_dir.glob("*.json"), reverse=True)
+        days_metadata = []
 
-            # 返回 GitHub Pages URL（需要你替换为实际仓库地址）
-            # 格式：https://你的用户名.github.io/仓库名/
-            return "https://你的用户名.github.io/ai-audio-daily/"
-        except Exception as e:
-            print(f"⚠️ GitHub部署跳过: {e}")
-            return None
+        for hist_file in history_files[:30]:  # 最多显示30天
+            try:
+                with open(hist_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                # 提取预览（每个类别取前1条）
+                preview_items = []
+                for cat, entries in data['categories'].items():
+                    if entries > 0:
+                        cat_entries = data['entries'].get(cat, [])
+                        if cat_entries:
+                            preview_items.append(cat_entries[0]['short_summary'])
+                    if len(preview_items) >= 3:
+                        break
+                
+                days_metadata.append({
+                    'date': data['date'],
+                    'total_items': data['total_items'],
+                    'categories': data['categories'],
+                    'preview_items': preview_items[:3]
+                })
+            except Exception as e:
+                print(f"⚠️ 读取历史文件失败 {hist_file}: {e}")
+
+        # 生成主页
+        self.page_gen.generate_index_page(days_metadata)
+        print(f"✅ 主页已更新，共 {len(days_metadata)} 期")
 
     def cleanup_old_files(self, days=7):
-        """清理旧音频（保留最近7天）"""
+        """清理旧音频和历史数据（保留最近7天）"""
         from datetime import datetime, timedelta
-        audio_dir = self.data_dir / "audio"
         cutoff = datetime.now() - timedelta(days=days)
-
+        
+        # 清理音频
+        audio_dir = self.data_dir / "audio"
         for f in audio_dir.glob("*.mp3"):
             mtime = datetime.fromtimestamp(f.stat().st_mtime)
             if mtime < cutoff:
                 f.unlink()
-                print(f"🗑️ 删除旧文件: {f.name}")
+                print(f"🗑️ 删除音频: {f.name}")
+
+        # 清理历史数据（保留最近7天）
+        for hist_file in self.history_dir.glob("*.json"):
+            mtime = datetime.fromtimestamp(hist_file.stat().st_mtime)
+            if mtime < cutoff:
+                hist_file.unlink()
+                print(f"🗑️ 删除历史: {hist_file.name}")
 
 if __name__ == "__main__":
     agent = AIAudioDailyAgent()
