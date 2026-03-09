@@ -124,7 +124,7 @@ INDEX_TEMPLATE = """
                     <p style="color: #999; font-style: italic;">... 还有 {{ day.total_items - 3 }} 条未显示</p>
                 {% endif %}
             </div>
-            <a href="public/archive/{{ day.date }}/">查看详情 →</a>
+            <a href="archive/{{ day.date }}/">查看详情 →</a>
         </div>
         {% endfor %}
     {% else %}
