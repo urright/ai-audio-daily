@@ -31,7 +31,7 @@ DETAIL_TEMPLATE = """
         <h1>🎧 OpenClaw 生态日报</h1>
         <p>{{ date }} · 共收集 {{ total_items }} 条动态</p>
         <p><a href="#audio-summary" style="color: white;">▶️ 收听语音摘要</a></p>
-        <p style="margin-top: 10px;"><a href="../index.html" style="color: white;">📋 返回主页</a></p>
+        <p style="margin-top: 10px;"><a href="../../index.html" style="color: white;">📋 返回主页</a></p>
     </div>
 
     {% for category, entries in categorized.items() %}
@@ -60,7 +60,7 @@ DETAIL_TEMPLATE = """
     <div class="category" id="audio-summary">
         <h2>🎵 语音摘要</h2>
         <audio controls style="width: 100%; max-width: 600px;">
-            <source src="audio/{{ audio_filename }}" type="audio/mpeg">
+            <source src="../../audio/{{ audio_filename }}" type="audio/mpeg">
             您的浏览器不支持audio标签。
         </audio>
         <p><small>点击播放今日语音简报（约2-3分钟）</small></p>
@@ -124,7 +124,7 @@ INDEX_TEMPLATE = """
                     <p style="color: #999; font-style: italic;">... 还有 {{ day.total_items - 3 }} 条未显示</p>
                 {% endif %}
             </div>
-            <a href="archive/{{ day.date }}/">查看详情 →</a>
+            <a href="public/archive/{{ day.date }}/">查看详情 →</a>
         </div>
         {% endfor %}
     {% else %}
