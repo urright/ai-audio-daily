@@ -21,8 +21,8 @@ class AIAudioDailyAgent:
         # 组件
         self.collector = DataCollector()
         self.processor = ContentProcessor()
-        self.audio_gen = AudioGenerator()
-        self.page_gen = PageGenerator()
+        self.audio_gen = AudioGenerator(output_dir="docs/audio")
+        self.page_gen = PageGenerator(output_dir="docs")
         self.telegram = TelegramSender()
 
     async def run(self):
