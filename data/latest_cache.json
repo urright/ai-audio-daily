@@ -1,163 +1,387 @@
 [
   {
     "source": "rss",
-    "title": "test: restore fs bridge helper export",
-    "link": "https://github.com/openclaw/openclaw/commit/a52104c235a6378a8e7ecc77ab0cc5c047ea3ad9",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">test: restore fs bridge helper export</pre>",
-    "published": "2026-03-11T02:38:00",
+    "title": "Improving instruction hierarchy in frontier LLMs",
+    "link": "https://openai.com/index/instruction-hierarchy-challenge",
+    "summary": "IH-Challenge trains models to prioritize trusted instructions, improving instruction hierarchy, safety steerability, and resistance to prompt injection attacks.",
+    "published": "2026-03-10T11:00:00",
     "category": "general"
   },
   {
     "source": "rss",
-    "title": "fix(security): pin staged writes and fs mutations",
-    "link": "https://github.com/openclaw/openclaw/commit/a0d5462571ab66d0106ae4076e3bed381a72a06c",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): pin staged writes and fs mutations</pre>",
-    "published": "2026-03-11T02:38:00",
-    "category": "bugfix"
+    "title": "New ways to learn math and science in ChatGPT",
+    "link": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt",
+    "summary": "ChatGPT introduces interactive visual explanations for math and science, helping students explore formulas, variables, and concepts in real time.",
+    "published": "2026-03-10T10:00:00",
+    "category": "feature"
   },
   {
     "source": "rss",
-    "title": "fix(node-host): fail closed on unbound interpreter approvals",
-    "link": "https://github.com/openclaw/openclaw/commit/daaf211e20feaab89f8c1a65343b0daf064a7322",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(node-host): fail closed on unbound interpreter approvals</pre>",
-    "published": "2026-03-11T02:36:38",
-    "category": "bugfix"
-  },
-  {
-    "source": "rss",
-    "title": "refactor: unify sandbox fs bridge mutations",
-    "link": "https://github.com/openclaw/openclaw/commit/72b0e00eab617c350646b1a5a46c6417e75d4c7e",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: unify sandbox fs bridge mutations</pre>",
-    "published": "2026-03-11T02:10:23",
+    "title": "Trump Administration Won’t Rule Out Further Action Against Anthropic",
+    "link": "https://www.wired.com/story/trump-administration-refuses-to-say-it-wont-take-further-action-against-anthropic/",
+    "summary": "The White House is preparing an executive order targeting the AI startup, even as its earlier actions against the company face a major test in court.",
+    "published": "2026-03-11T01:41:42",
     "category": "general"
   },
   {
     "source": "rss",
-    "title": "Switch to org-wide funding.yml file",
-    "link": "https://github.com/openclaw/openclaw/commit/841f3b4af5776acf40bd508e9e20da4af6a471ef",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Switch to org-wide funding.yml file</pre>",
-    "published": "2026-03-11T01:55:08",
+    "title": "Pete Hegseth Is Pushing Defense Employees to Volunteer With DHS",
+    "link": "https://www.wired.com/story/pete-hegseth-is-pushing-defense-employees-to-volunteer-for-dhs/",
+    "summary": "The defense secretary has made clear that Pentagon managers are to encourage workers, including civilians, to volunteer to assist in the administration’s immigration crackdown.",
+    "published": "2026-03-10T20:06:45",
     "category": "general"
   },
   {
     "source": "rss",
-    "title": "fix: harden subagent control boundaries",
-    "link": "https://github.com/openclaw/openclaw/commit/aad014c7c1fa3db5d9634c7f3ed781e3c7c012e5",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: harden subagent control boundaries</pre>",
-    "published": "2026-03-11T01:44:38",
+    "title": "Anker’s Discounted Power Station Can Power Your Next Camping Trip",
+    "link": "https://www.wired.com/story/anker-solix-c1000-spring-deal/",
+    "summary": "Go off-grid camping for a long weekend with my favorite portable power station from Anker. It’s on sale.",
+    "published": "2026-03-10T18:55:32",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Interstellar Comet 3I/Atlas Has Another Surprise: It’s Full of Alcohol",
+    "link": "https://www.wired.com/story/interstellar-comet-3i-atlas-has-another-surprise-its-full-of-alcohol/",
+    "summary": "Analysis of the tail of 3I/Atlas reveals that it contains an anomalous proportion of methanol, a class of alcohol used in fuels.",
+    "published": "2026-03-10T18:48:25",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "DHS Ousts CBP Privacy Officers Who Questioned ‘Illegal’ Orders",
+    "link": "https://www.wired.com/story/cbp-privacy-threshold-analysis-foia/",
+    "summary": "Department of Homeland Security leaders removed top privacy officers who objected to mislabeling government records to block their public release, WIRED has learned.",
+    "published": "2026-03-10T18:23:28",
+    "category": "release"
+  },
+  {
+    "source": "rss",
+    "title": "Our Favorite Earbuds for Samsung Owners Are on Sale",
+    "link": "https://www.wired.com/story/samsung-galaxy-buds-fe-deal-326/",
+    "summary": "The Samsung Galaxy Buds 3 FE are a great pairing for anyone with a Galaxy phone.",
+    "published": "2026-03-10T17:50:54",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Fake AI Content About the Iran War Is All Over X",
+    "link": "https://www.wired.com/story/fake-ai-content-about-the-iran-war-is-all-over-x/",
+    "summary": "X’s Grok is failing to accurately verify video footage from the Iran conflict and is sharing its own AI-generated images about the war.",
+    "published": "2026-03-10T16:45:47",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "A Trumpworld Events Company Is Raking In Millions in Federal Contracts",
+    "link": "https://www.wired.com/story/they-helped-plan-the-january-6-rally-now-their-events-company-is-raking-in-millions-in-government-contracts/",
+    "summary": "The Trump administration has awarded Event Strategies several contracts—including one that could be worth up to $100 million—with little competition, according to federal filings.",
+    "published": "2026-03-10T15:40:18",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "GPS Attacks Near Iran Are Wreaking Havoc on Delivery and Mapping Apps",
+    "link": "https://www.wired.com/story/gps-attacks-near-iran-are-wreaking-havoc-on-delivery-and-mapping-apps/",
+    "summary": "Delivery apps are glitching and navigation routes are changing abruptly thanks to electronic warfare disrupting the satellite signals that power everything from missiles to your ride home.",
+    "published": "2026-03-10T15:22:35",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "I Used Google’s New Gemini-Powered ‘Help Me Create’ Tool in Docs. It’s Great at Corporate-Speak",
+    "link": "https://www.wired.com/story/google-gemini-workspace-ai-tools-hands-on/",
+    "summary": "Google has injected Docs, Drive, Sheets, and Slides with its Gemini assistant, adding new features that can pull information from your emails and the web to help you draft content. I gave it a whirl.",
+    "published": "2026-03-10T13:00:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Apple MacBook Neo Review: Delicious, Low-Hanging Fruit",
+    "link": "https://www.wired.com/review/apple-macbook-neo/",
+    "summary": "At $599, the MacBook Neo is Apple’s first budget laptop. For the most part, Apple cut corners in the right places and made a MacBook its intended buyers will adore.",
+    "published": "2026-03-10T13:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "What’s the Best iPhone to Buy or Avoid Right Now? (2026)",
+    "link": "https://www.wired.com/gallery/iphone-buying-guide/",
+    "summary": "The iPhone 17e is here. Here are all the details on Apple’s smartphones to help you find the right model, whether that’s the ultralight iPhone Air or the orange iPhone 17 Pro.",
+    "published": "2026-03-10T12:30:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Some People Are Too Sleepy to Make Fancy Coffee. For Them, There’s the Keurig K-Cafe",
+    "link": "https://www.wired.com/story/keurig-k-cafe-smart-rave/",
+    "summary": "If convenient coffee is what you seek, this coffee machine is worth every inch of counter space.",
+    "published": "2026-03-10T12:10:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "8 Best Cheap Phones (2026), Tested and Reviewed",
+    "link": "https://www.wired.com/story/best-cheap-phones/",
+    "summary": "There’s little reason to pay top dollar for a smartphone. These iPhones and Android devices—ranging from $100 to $600—stood up to WIRED’s testing.",
+    "published": "2026-03-10T11:30:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "The Best Streaming Bundles and Streaming Deals of March 2026",
+    "link": "https://www.wired.com/story/best-streaming-deals-and-streaming-bundles/",
+    "summary": "Here are the current best bundles from the most popular services.",
+    "published": "2026-03-10T11:06:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "How Can a Locomotive Pull a Long Train That’s Much Heavier?",
+    "link": "https://www.wired.com/story/how-can-a-locomotive-pull-a-train-thats-much-heavier/",
+    "summary": "For railroads, it’s all about managing static and kinetic friction.",
+    "published": "2026-03-10T11:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "How to Responsibly Dispose of Your Electronics (2026)",
+    "link": "https://www.wired.com/story/how-to-responsibly-dispose-electronics/",
+    "summary": "Get rid of old, broken, and unused devices—even Lightning cables—without adding to the e-waste problem.",
+    "published": "2026-03-10T10:30:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Use Microsoft PC Manager to Speed Up Your Windows 11 Computer",
+    "link": "https://www.wired.com/story/microsoft-pc-manager-speed-up-windows-11/",
+    "summary": "Can you really get a Windows PC running like new again? Using this free tool from Microsoft, you can get pretty close.",
+    "published": "2026-03-10T10:30:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Wiim Amp Ultra Review: A Fantastic Streaming Amp With TV Input",
+    "link": "https://www.wired.com/review/wiim-amp-ultra/",
+    "summary": "This amazing Sonos Amp alternative offers nearly everything you could want from a modern stereo.",
+    "published": "2026-03-10T10:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "11 Best Pillows: Tested For Side, Back, and Stomach Sleepers (2026)",
+    "link": "https://www.wired.com/gallery/best-pillows/",
+    "summary": "We’ve spent over a year testing the best pillows to support your noggin, whether you snooze on your side, on your back, or in a tangle of blankets.",
+    "published": "2026-03-10T09:37:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Yann LeCun Raises $1 Billion to Build AI That Understands the Physical World",
+    "link": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
+    "summary": "Meta’s former chief AI scientist has long argued that human-level AI will come from mastering the physical world, not language. His new startup, AMI, aims to prove it.",
+    "published": "2026-03-10T05:00:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Nvidia Is Planning to Launch an Open-Source AI Agent Platform",
+    "link": "https://www.wired.com/story/nvidia-planning-ai-agent-platform-launch-open-source/",
+    "summary": "Ahead of its annual developer conference, Nvidia is readying a new approach to software that embraces AI agents similar to OpenClaw.",
+    "published": "2026-03-09T23:11:34",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "‘Flying Cars’ Will Take Off in American Skies This Summer",
+    "link": "https://www.wired.com/story/flying-cars-will-take-off-in-american-skies-this-summer/",
+    "summary": "The federal government announced a new pilot program designed to get new kinds of ultralight vehicles and “eVTOLs” up and running around the country—even if they're not fully FAA-certified.",
+    "published": "2026-03-09T22:39:12",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Anthropic Claims Pentagon Feud Could Cost It Billions",
+    "link": "https://www.wired.com/story/anthropic-claims-business-is-in-peril-due-to-supply-chain-risk-designation/",
+    "summary": "Executives at the AI startup say companies paused deal talks after the Trump administration labeled it a supply-chain risk, warning that the fallout could cause a major revenue hit.",
+    "published": "2026-03-09T20:49:29",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "OpenAI and Google Workers File Amicus Brief in Support of Anthropic Against the US Government",
+    "link": "https://www.wired.com/story/openai-deepmind-employees-file-amicus-brief-anthropic-dod-lawsuit/",
+    "summary": "Google DeepMind chief scientist Jeff Dean is among the AI researchers and engineers rushing to Anthropic's defense.",
+    "published": "2026-03-09T20:38:12",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "How Pokémon Go is giving delivery robots an inch-perfect view of the world",
+    "link": "https://www.technologyreview.com/2026/03/10/1134099/how-pokemon-go-is-helping-robots-deliver-pizza-on-time/",
+    "summary": "Pokémon Go was the world’s first augmented-reality megahit. Released in 2016 by the Google spinout Niantic, the AR twist on the juggernaut Pokémon franchise fast became a global phenomenon. From Chicago to Oslo to Enoshima, players hit the streets in the urgent hope of catching a Jigglypuff or a Squirtle or (with a huge amount&#8230;",
+    "published": "2026-03-10T13:47:26",
+    "category": "release"
+  },
+  {
+    "source": "rss",
+    "title": "When KaOS Linux dropped KDE Plasma, I worried - now I'm loving the new default desktop",
+    "link": "https://www.zdnet.com/article/kaos-linux-distro-replaces-kde-plasma-desktop-default/",
+    "summary": "The rolling release distro switches to Niri, a scrollable, tiling compositor that's a lot cooler than you'd think. See why.",
+    "published": "2026-03-11T02:00:52",
+    "category": "release"
+  },
+  {
+    "source": "rss",
+    "title": "Watch this, get rich, lose it all - 8 ways to spot and avoid investment scams on Meta",
+    "link": "https://www.zdnet.com/article/investment-scam-paid-social-media-ads/",
+    "summary": "This sophisticated investment scam is spread via paid Meta ads and fake news stories. Here's what to look for.",
+    "published": "2026-03-11T01:00:49",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "MacBook Neo review: My biggest concern with Apple's near-perfect budget laptop",
+    "link": "https://www.zdnet.com/article/apple-macbook-neo-review/",
+    "summary": "Apple's new $599 MacBook Neo is a snappy 13-inch that feels a lot like its older siblings, but I can't help but wonder how it'll hold up after a few years.",
+    "published": "2026-03-11T00:00:50",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "7 surprisingly useful ways to use ChatGPT's voice mode, from a former skeptic",
+    "link": "https://www.zdnet.com/article/chatgpt-voice-mode-tricks/",
+    "summary": "Voice Mode fabricated answers the last time I used it, but I tested it again to see if it's actually useful now.",
+    "published": "2026-03-11T00:00:36",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Sonos just launched 2 new speakers, with some subtle but useful upgrades",
+    "link": "https://www.zdnet.com/article/sonos-play-era-100-sl-news/",
+    "summary": "Sonos announces the Play and Era 100 SL speakers, giving new and existing customers even more modular options.",
+    "published": "2026-03-10T21:26:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "How to free up your iPhone storage almost immediately - 8 easy ways",
+    "link": "https://www.zdnet.com/article/how-to-get-more-iphone-storage-for-free/",
+    "summary": "Running out of iPhone space? Don't panic-buy a new phone or more iCloud. Here's how to free up space fast.",
+    "published": "2026-03-10T20:19:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Is AI stealing our jobs? A survey of 2,000 IT executives reveals a complicated answer",
+    "link": "https://www.zdnet.com/article/snowflake-it-executive-survey-ai-job-loss-and-gains/",
+    "summary": "New Snowflake survey shows demand for tech jobs evolving away from basic skills toward high-level AI oversight.",
+    "published": "2026-03-10T19:18:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "How to turn on repair mode on your Android phone - and why it's critical to do so",
+    "link": "https://www.zdnet.com/article/how-to-turn-on-repair-mode-android-phone/",
+    "summary": "Repair Mode lets technicians fix your Android phone without seeing your personal files or apps. Here's how to enable it.",
+    "published": "2026-03-10T16:46:00",
+    "category": "tutorial"
+  },
+  {
+    "source": "rss",
+    "title": "How I'm getting better sleep this year thanks to these quirky gadgets",
+    "link": "https://www.zdnet.com/article/products-i-use-for-better-sleep-as-a-health-editor/",
+    "summary": "I regularly clock 7 hours a night, and I wake up without the help of an alarm. Here's why my sleep is so good.",
+    "published": "2026-03-10T16:42:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "I changed 12 settings on my Android phone to extend its battery life by hours",
+    "link": "https://www.zdnet.com/article/best-android-phone-settings-change-for-better-battery-life/",
+    "summary": "Consider these expert-vetted tips and tricks to make your device last up to hours longer - no matter the brand.",
+    "published": "2026-03-10T16:32:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Enterprise AI agents are multiplying fast, and Microsoft wants full control of them",
+    "link": "https://www.zdnet.com/article/microsoft-introduces-agent-365/",
+    "summary": "Microsoft has introduced a centralized dashboard to help IT teams monitor AI agents' visibility, permissions, and security risks.",
+    "published": "2026-03-10T16:23:00",
     "category": "skill"
   },
   {
     "source": "rss",
-    "title": "refactor(security): simplify system.run approval model",
-    "link": "https://github.com/openclaw/openclaw/commit/68c674d37c3c14b85cc154d595fc7844b36a6c2b",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor(security): simplify system.run approval model</pre>",
-    "published": "2026-03-11T01:43:06",
+    "title": "Gemini can now use your Drive and emails to build spreadsheets, slides and more",
+    "link": "https://www.zdnet.com/article/google-gemini-drive-sheets-docs-slides/",
+    "summary": "Gemini can access relevant information from your other sources to give personalized help.",
+    "published": "2026-03-10T16:22:51",
     "category": "general"
   },
   {
     "source": "rss",
-    "title": "refactor: unify gateway credential planning",
-    "link": "https://github.com/openclaw/openclaw/commit/5716e524171b3a6e5d3d0077612ba78d8faa3de6",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: unify gateway credential planning</pre>",
-    "published": "2026-03-11T01:37:25",
+    "title": "This sunrise alarm clock improved my sleep routine, and it's $25 off right now",
+    "link": "https://www.zdnet.com/article/this-sunrise-alarm-clock-improved-my-sleep-routine-and-its-25-off-right-now/",
+    "summary": "The Hatch Restore 3 boasts personalized sleep routines and peaceful morning moments, and you can get it for $25 off during National Sleep Week.",
+    "published": "2026-03-10T16:20:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "YouTube TV is offering 12 cheaper channel packages (including live sports) right now",
+    "link": "https://www.zdnet.com/article/youtube-tv-choose-from-12-cheaper-packages/",
+    "summary": "The streaming service rolls out a dozen cheaper subscription plans - pick the one that fits your viewing habits.",
+    "published": "2026-03-10T16:19:00",
     "category": "general"
   },
   {
     "source": "rss",
-    "title": "refactor(security): unify config write target policy",
-    "link": "https://github.com/openclaw/openclaw/commit/3a39dc4e18841d2a3986928fbeabcd36ae93b694",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor(security): unify config write target policy</pre>",
-    "published": "2026-03-11T01:35:04",
+    "title": "I set up a Firawalla Orange router at home, and it's a bigger security upgrade than expected",
+    "link": "https://www.zdnet.com/article/firewalla-orange-review/",
+    "summary": "The Firewalla Orange makes network monitoring and security accessible for home setups, small businesses, and more.",
+    "published": "2026-03-10T16:09:00",
     "category": "general"
   },
   {
     "source": "rss",
-    "title": "fix(security): bind system.run approvals to exact argv text",
-    "link": "https://github.com/openclaw/openclaw/commit/7289c19f1a35fe82f8047c11de9d7cc0429ae112",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): bind system.run approvals to exact argv text</pre>",
-    "published": "2026-03-11T01:25:31",
+    "title": "Samsung Galaxy S24 Ultra vs. S26 Ultra: Should you upgrade to the latest model after two years?",
+    "link": "https://www.zdnet.com/article/samsung-galaxy-s26-ultra-vs-galaxy-s24-ultra/",
+    "summary": "Wondering how the Samsung Galaxy S24 Ultra from 2024 stacks up to the latest Ultra flagship? Here's how the two phones compare.",
+    "published": "2026-03-10T15:35:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "AI is getting scary good at finding hidden software bugs - even in decades-old code",
+    "link": "https://www.zdnet.com/article/ai-finds-hidden-bugs-old-code/",
+    "summary": "But AI also creates bugs - about 1.7 times as many as humans, including critical and major issues.",
+    "published": "2026-03-10T15:28:41",
     "category": "bugfix"
   },
   {
     "source": "rss",
-    "title": "fix(security): enforce target account configWrites",
-    "link": "https://github.com/openclaw/openclaw/commit/8eac9394170e2218a55fab774c310ff9bcaad19f",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): enforce target account configWrites</pre>",
-    "published": "2026-03-11T01:24:36",
-    "category": "bugfix"
+    "title": "Google Maps vs. Waze: I compared the two best navigation apps, and this one's better",
+    "link": "https://www.zdnet.com/article/google-maps-vs-waze/",
+    "summary": "The debate between Waze and Google Maps has raged for years. Here's my verdict after testing both for an extensive period.",
+    "published": "2026-03-10T15:23:00",
+    "category": "general"
   },
   {
     "source": "rss",
-    "title": "fix(sandbox): pin fs-bridge staged writes",
-    "link": "https://github.com/openclaw/openclaw/commit/11924a70264f235b2b1d47e3d32a5f0dae111bb1",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(sandbox): pin fs-bridge staged writes</pre>",
-    "published": "2026-03-11T01:15:47",
-    "category": "bugfix"
+    "title": "Windows 12 could be the tipping point that finally pushes you to Linux - here's why",
+    "link": "https://www.zdnet.com/article/windows-12-rumors-linux-migration/",
+    "summary": "Some rumored Windows 12 features could frustrate users and be the reason Linux finally starts looking better.",
+    "published": "2026-03-10T14:40:00",
+    "category": "feature"
   },
   {
     "source": "rss",
-    "title": "fix: fail closed for unresolved local gateway auth refs",
-    "link": "https://github.com/openclaw/openclaw/commit/702f6f3305653922548ed2f5c78228ef3c3573e7",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: fail closed for unresolved local gateway auth refs</pre>",
-    "published": "2026-03-11T01:14:06",
-    "category": "bugfix"
-  },
-  {
-    "source": "rss",
-    "title": "fix(security): restrict leaf subagent control scope",
-    "link": "https://github.com/openclaw/openclaw/commit/ecdbd8aa523d25f5da41d3984bfca72612628a95",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): restrict leaf subagent control scope</pre>",
-    "published": "2026-03-11T01:12:22",
+    "title": "This free Linux app lets you make memes in seconds - no GIMP required",
+    "link": "https://www.zdnet.com/article/linux-meme-generator-app-memerist-no-gimp/",
+    "summary": "If you want to make memes using your own images - without AI or complicated editors - Linux has a free tool that's fun to try.",
+    "published": "2026-03-10T14:37:02",
     "category": "skill"
-  },
-  {
-    "source": "rss",
-    "title": "Infra: extract backup and plugin path helpers",
-    "link": "https://github.com/openclaw/openclaw/commit/3ba64916599b57978c42aafd2857d4e4fdb44d9c",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Infra: extract backup and plugin path helpers</pre>",
-    "published": "2026-03-11T00:16:35",
-    "category": "skill"
-  },
-  {
-    "source": "rss",
-    "title": "refactor: compile allowlist matchers",
-    "link": "https://github.com/openclaw/openclaw/commit/f4a4b50cd528349154ccc5c1d7b975bcfdda94d6",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: compile allowlist matchers</pre>",
-    "published": "2026-03-11T00:07:47",
-    "category": "general"
-  },
-  {
-    "source": "rss",
-    "title": "test: cover cron nested lane selection",
-    "link": "https://github.com/openclaw/openclaw/commit/fa0329c340761b7315ac025121b2308aa75734ff",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">test: cover cron nested lane selection</pre>",
-    "published": "2026-03-11T00:02:00",
-    "category": "general"
-  },
-  {
-    "source": "rss",
-    "title": "fix: remove stale allowlist matcher cache",
-    "link": "https://github.com/openclaw/openclaw/commit/f604cbedf3d23219939b43850e5ce4d3a04b2cde",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: remove stale allowlist matcher cache</pre>",
-    "published": "2026-03-11T00:00:04",
-    "category": "bugfix"
-  },
-  {
-    "source": "rss",
-    "title": "fix: avoid cron embedded lane deadlock",
-    "link": "https://github.com/openclaw/openclaw/commit/825a435709e98a1683a60e737a77ffe98122c284",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: avoid cron embedded lane deadlock</pre>",
-    "published": "2026-03-10T23:56:21",
-    "category": "bugfix"
-  },
-  {
-    "source": "rss",
-    "title": "Merge remote-tracking branch 'origin/main'",
-    "link": "https://github.com/openclaw/openclaw/commit/8901032007562c1b6dab4fde53d3482a9cd16012",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Merge remote-tracking branch 'origin/main'</pre>",
-    "published": "2026-03-10T23:55:30",
-    "category": "general"
   },
   {
     "source": "youtube",

@@ -1,18 +1,22 @@
-# OpenClaw 相关 RSS 源
+# OpenClaw 日报 - 精选公共媒体与官方公告源
+# 偏向于对普通听众有价值的新闻，而非琐碎代码提交
 
-# GitHub Releases（官方发布）
+# OpenClaw 官方发布渠道
 https://github.com/openclaw/openclaw/releases.atom
-
-# GitHub Commits（代码更新）
-https://github.com/openclaw/openclaw/commits/main.atom
-
-# 文档博客（如果有RSS）
 https://docs.openclaw.ai/blog/rss/
-
-# ClawHub 技能市场（如果有RSS）
 https://clawhub.com/feed/
 
-# 补充：AI/自动化领域新闻（保持广度）
-https://feeds.feedburner.com/TechCrunch/
+# AI 领域顶级公共媒体
+https://openai.com/blog/rss.xml
 https://huggingface.co/blog/feed/
 https://www.nvidia.com/en-us/feeds/blog/
+https://feeds.feedburner.com/techcrunch
+https://www.theverge.com/rss/artificial-intelligence/index.xml
+https://ai.googleblog.com/feeds/posts/default
+https://deepmind.com/blog/rss
+https://venturebeat.com/category/ai/feed/
+
+# 科技新闻（综合）
+https://www.wired.com/feed/rss
+https://www.technologyreview.com/topic/artificial-intelligence/feed
+https://www.zdnet.com/topic/artificial-intelligence/rss.xml
