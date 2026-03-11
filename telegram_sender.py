@@ -22,7 +22,7 @@ class TelegramSender:
                 files = {'audio': audio}
                 data = {
                     'chat_id': self.chat_id,
-                    'caption': caption or '📢 AI办公自动化日报 - 语音摘要',
+                    'caption': caption or '📢 OpenClaw信息日报 - 语音摘要',
                     'parse_mode': 'HTML'
                 }
                 resp = requests.post(url, files=files, data=data, timeout=30)

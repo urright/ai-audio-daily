@@ -77,7 +77,7 @@ class AIAudioDailyAgent:
             await self._generate_homepage()
 
             # 7. 发送到Telegram（发送今日详情页链接）
-            page_url = f"https://urright.github.io/ai-audio-daily/public/archive/{date_str}/"
+            page_url = f"https://urright.github.io/ai-audio-daily/archive/{date_str}/"
             if self.telegram.bot_token and self.telegram.chat_id:
                 self.telegram.send_daily_report(
                     page_url=page_url,
