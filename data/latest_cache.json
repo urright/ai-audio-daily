@@ -1,6 +1,22 @@
 [
   {
     "source": "rss",
+    "title": "fix: harden subagent control boundaries",
+    "link": "https://github.com/openclaw/openclaw/commit/aad014c7c1fa3db5d9634c7f3ed781e3c7c012e5",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: harden subagent control boundaries</pre>",
+    "published": "2026-03-11T01:44:38",
+    "category": "skill"
+  },
+  {
+    "source": "rss",
+    "title": "refactor(security): simplify system.run approval model",
+    "link": "https://github.com/openclaw/openclaw/commit/68c674d37c3c14b85cc154d595fc7844b36a6c2b",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor(security): simplify system.run approval model</pre>",
+    "published": "2026-03-11T01:43:06",
+    "category": "general"
+  },
+  {
+    "source": "rss",
     "title": "refactor: unify gateway credential planning",
     "link": "https://github.com/openclaw/openclaw/commit/5716e524171b3a6e5d3d0077612ba78d8faa3de6",
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: unify gateway credential planning</pre>",
@@ -142,14 +158,6 @@
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: extract archive staging helpers</pre>",
     "published": "2026-03-10T23:52:31",
     "category": "general"
-  },
-  {
-    "source": "rss",
-    "title": "fix: harden archive extraction destinations",
-    "link": "https://github.com/openclaw/openclaw/commit/658cf4bd94883b77898ecc1b0606a29ea285cf88",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: harden archive extraction destinations</pre>",
-    "published": "2026-03-10T23:49:35",
-    "category": "bugfix"
   },
   {
     "source": "youtube",
