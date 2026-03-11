@@ -1,0 +1,14 @@
+# OpenClaw 生态专报 - 官方信息来源
+# 仅包含 OpenClaw 官方渠道，面向开发者社区
+
+# GitHub Releases（产品正式发布）
+https://github.com/openclaw/openclaw/releases.atom
+
+# 官方文档博客
+https://docs.openclaw.ai/blog/rss/
+
+# ClawHub 技能市场动态
+https://clawhub.com/feed/
+
+# （可选）社区讨论公告
+# https://github.com/openclaw/openclaw/discussions/category/announcements.atom

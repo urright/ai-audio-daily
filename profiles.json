@@ -1,0 +1,28 @@
+[
+  {
+    "name": "it_news",
+    "description": "OpenClaw 日报 - IT 业界新闻（AI、科技公共媒体）",
+    "config_dir": "config",
+    "output_dir": "docs/it",
+    "audio_subdir": "audio",
+    "url_path": "it",
+    "voice_style": "zh-CN-XiaoxiaoNeural",
+    "telegram_bot_token": "${TELEGRAM_BOT_TOKEN}",
+    "telegram_chat_id": "${TELEGRAM_CHAT_ID}",
+    "schedule": "30 7 * * *",
+    "enabled": true
+  },
+  {
+    "name": "openclaw_ecosystem",
+    "description": "OpenClaw 生态专报 - 官方更新、社区公告，面向开发者",
+    "config_dir": "config_openclaw",
+    "output_dir": "docs/oc",
+    "audio_subdir": "audio",
+    "url_path": "oc",
+    "voice_style": "zh-CN-XiaoxiaoNeural",
+    "telegram_bot_token": "${TELEGRAM_BOT_TOKEN}",
+    "telegram_chat_id": "${TELEGRAM_CHAT_ID}",
+    "schedule": "0 20 * * *",
+    "enabled": true
+  }
+]

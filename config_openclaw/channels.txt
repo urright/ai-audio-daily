@@ -1,0 +1,4 @@
+# OpenClaw 官方 YouTube 频道（可选）
+# 可添加官方频道以获取视频公告
+# https://www.youtube.com/@OpenClawAI
+# https://www.youtube.com/@ClawHub

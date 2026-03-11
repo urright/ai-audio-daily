@@ -1,0 +1,100 @@
+{
+  "profile": "it_news",
+  "date": "2026-03-10",
+  "total_items": 8,
+  "categories": {
+    "feature": 3,
+    "release": 1,
+    "bugfix": 1,
+    "general": 3
+  },
+  "entries": {
+    "feature": [
+      {
+        "source": "rss",
+        "title": "Sonos just launched 2 new speakers, with some subtle but useful upgrades",
+        "link": "https://www.zdnet.com/article/sonos-play-era-100-sl-news/",
+        "summary": "Sonos announces the Play and Era 100 SL speakers, giving new and existing customers even more modular options.",
+        "published": "2026-03-10T21:26:00",
+        "category": "feature",
+        "short_summary": "Sonos 发布了 2 款新喇叭，提供更多模块化选择。"
+      },
+      {
+        "source": "rss",
+        "title": "I Used Google’s New Gemini-Powered ‘Help Me Create’ Tool in Docs. It’s Great at Corporate-Speak",
+        "link": "https://www.wired.com/story/google-gemini-workspace-ai-tools-hands-on/",
+        "summary": "Google has injected Docs, Drive, Sheets, and Slides with its Gemini assistant, adding new features that can pull information from your emails and the web to help you draft content. I gave it a whirl.",
+        "published": "2026-03-10T13:00:00",
+        "category": "feature",
+        "short_summary": "谷歌的文档工具新增了智能助手，可以从邮件和网页中提取信息，帮助你更快地创作内容。"
+      },
+      {
+        "source": "rss",
+        "title": "New ways to learn math and science in ChatGPT",
+        "link": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt",
+        "summary": "ChatGPT introduces interactive visual explanations for math and science, helping students explore formulas, variables, and concepts in real time.",
+        "published": "2026-03-10T10:00:00",
+        "category": "feature",
+        "short_summary": "现在可以通过互动的图形解释来学习数学和科学，帮助学生实时探索公式、变量和概念。"
+      }
+    ],
+    "release": [
+      {
+        "source": "rss",
+        "title": "When KaOS Linux dropped KDE Plasma, I worried - now I'm loving the new default desktop",
+        "link": "https://www.zdnet.com/article/kaos-linux-distro-replaces-kde-plasma-desktop-default/",
+        "summary": "The rolling release distro switches to Niri, a scrollable, tiling compositor that's a lot cooler than you'd think. See why.",
+        "published": "2026-03-11T02:00:52",
+        "category": "release",
+        "short_summary": "KaOS Linux 放弃了 KDE Plasma，改用 Niri 桌面环境，结果出乎意料地好。"
+      }
+    ],
+    "bugfix": [
+      {
+        "source": "rss",
+        "title": "I set up a Firawalla Orange router at home, and it's a bigger security upgrade than expected",
+        "link": "https://www.zdnet.com/article/firewalla-orange-review/",
+        "summary": "The Firewalla Orange makes network monitoring and security accessible for home setups, small businesses, and more.",
+        "published": "2026-03-10T16:09:00",
+        "category": "bugfix",
+        "short_summary": "Firewalla Orange 让家庭和小型企业的网络监控和安全变得更加容易。"
+      }
+    ],
+    "general": [
+      {
+        "source": "rss",
+        "title": "Samsung Galaxy S24 Ultra vs. S26 Ultra: Should you upgrade to the latest model after two years?",
+        "link": "https://www.zdnet.com/article/samsung-galaxy-s26-ultra-vs-galaxy-s24-ultra/",
+        "summary": "Wondering how the Samsung Galaxy S24 Ultra from 2024 stacks up to the latest Ultra flagship? Here's how the two phones compare.",
+        "published": "2026-03-10T15:35:00",
+        "category": "general",
+        "short_summary": "想知道2024年的三星S24 Ultra和最新的Ultra旗舰机型有什么区别？让我们来比较一下这两款手机。"
+      },
+      {
+        "source": "youtube",
+        "title": "OpenAI - Videos",
+        "url": "https://www.youtube.com/@OpenAI/videos",
+        "duration": 0,
+        "uploader": "OpenAI",
+        "upload_date": "",
+        "category": "general",
+        "published": "2026-03-10",
+        "link": "https://www.youtube.com/@OpenAI/videos",
+        "short_summary": "可以观看视频了解更多信息。"
+      },
+      {
+        "source": "youtube",
+        "title": "OpenAI - Live",
+        "url": "https://www.youtube.com/@OpenAI/streams",
+        "duration": 0,
+        "uploader": "OpenAI",
+        "upload_date": "",
+        "category": "general",
+        "published": "2026-03-10",
+        "link": "https://www.youtube.com/@OpenAI/streams",
+        "short_summary": "让您随时随地获取信息和答案。"
+      }
+    ]
+  },
+  "audio": "2026-03-10.mp3"
+}
