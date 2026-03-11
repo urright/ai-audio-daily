@@ -15,7 +15,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: harden subagent control boundaries</pre>",
         "published": "2026-03-11T01:44:38",
         "category": "skill",
-        "short_summary": "增强子代理控制边界安全。"
+        "short_summary": "加强子代理控制边界安全。"
       },
       {
         "source": "rss",
@@ -24,7 +24,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): restrict leaf subagent control scope</pre>",
         "published": "2026-03-11T01:12:22",
         "category": "skill",
-        "short_summary": "修复安全漏洞：限制子代理控制范围。"
+        "short_summary": "限制子代理控制范围，提高安全性。"
       },
       {
         "source": "rss",
@@ -42,7 +42,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">SecretRef: harden custom/provider secret persistence and reuse (#42554)\n\n* Models: gate custom provider keys by usable secret semantics\n\n* Config: project runtime writes onto source snapshot\n\n* Models: prevent stale apiKey preservation for marker-managed providers\n\n* Runner: strip SecretRef marker headers from resolved models\n\n* Secrets: scan active agent models.json path in audit\n\n* Config: guard runtime-source projection for unrelated configs\n\n* Extensions: fix onboarding type errors in CI\n\n* Tests: align setup helper account-enabled expectation\n\n* Secrets audit: harden models.json file reads\n\n* fix: harden SecretRef custom/provider secret persistence (#42554) (thanks @joshavant)</pre>",
         "published": "2026-03-10T23:55:10",
         "category": "skill",
-        "short_summary": "SecretRef 加强了自定义/提供者密钥的持久性和重用。"
+        "short_summary": "SecretRef 加强自定义/提供商密钥持久性和重用。"
       }
     ],
     "general": [
@@ -62,7 +62,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: unify gateway credential planning</pre>",
         "published": "2026-03-11T01:37:25",
         "category": "general",
-        "short_summary": "简化网关凭证规划，提高办公自动化效率。"
+        "short_summary": "简化网关凭证规划，统一管理。"
       },
       {
         "source": "rss",
@@ -71,7 +71,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor(security): unify config write target policy</pre>",
         "published": "2026-03-11T01:35:04",
         "category": "general",
-        "short_summary": "简化安全配置，统一写入目标策略。"
+        "short_summary": "简化安全配置，统一写入策略。"
       },
       {
         "source": "rss",
@@ -80,7 +80,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: compile allowlist matchers</pre>",
         "published": "2026-03-11T00:07:47",
         "category": "general",
-        "short_summary": "重构：编译允许列表匹配器。"
+        "short_summary": "优化代码：编译允许列表匹配器。"
       },
       {
         "source": "rss",
@@ -98,7 +98,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Merge remote-tracking branch 'origin/main'</pre>",
         "published": "2026-03-10T23:55:30",
         "category": "general",
-        "short_summary": "合并远程跟踪分支“origin/main”。"
+        "short_summary": "合并远程跟踪分支“origin/main”"
       },
       {
         "source": "rss",
@@ -116,7 +116,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: split tar.bz2 extraction helpers</pre>",
         "published": "2026-03-10T23:53:32",
         "category": "general",
-        "short_summary": "重构：拆分tar.bz2解压辅助工具。"
+        "short_summary": "重构：拆分tar.bz2解压缩辅助工具。"
       },
       {
         "source": "rss",
@@ -134,7 +134,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: extract archive staging helpers</pre>",
         "published": "2026-03-10T23:52:31",
         "category": "general",
-        "short_summary": "重构：提取存档暂存帮助工具。"
+        "short_summary": "提取归档暂存帮助工具，优化代码结构。"
       },
       {
         "source": "youtube",
@@ -146,7 +146,7 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/videos",
-        "short_summary": "OpenAI视频教程，介绍AI办公自动化工具。"
+        "short_summary": "OpenAI视频资源，展示AI办公自动化解决方案。"
       },
       {
         "source": "youtube",
@@ -170,7 +170,7 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/shorts",
-        "short_summary": "OpenAI推出 Shorts 功能，实现办公自动化。"
+        "short_summary": "OpenAI 的 Shorts 功能实现办公自动化。"
       }
     ],
     "bugfix": [
@@ -181,7 +181,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): bind system.run approvals to exact argv text</pre>",
         "published": "2026-03-11T01:25:31",
         "category": "bugfix",
-        "short_summary": "安全修复：系统运行审批绑定到精确的argv文本。"
+        "short_summary": "安全更新：system.run 审批绑定到精确的 argv 文本。"
       },
       {
         "source": "rss",
@@ -190,7 +190,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): enforce target account configWrites</pre>",
         "published": "2026-03-11T01:24:36",
         "category": "bugfix",
-        "short_summary": "安全更新：强制执行目标账户配置写入。"
+        "short_summary": "修复安全漏洞：强制执行目标账户配置写入。"
       },
       {
         "source": "rss",
@@ -208,7 +208,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: fail closed for unresolved local gateway auth refs</pre>",
         "published": "2026-03-11T01:14:06",
         "category": "bugfix",
-        "short_summary": "修复：本地网关认证引用无法解析时默认关闭。"
+        "short_summary": "修复：未解析本地网关认证引用的失败闭合问题。"
       },
       {
         "source": "rss",
@@ -217,7 +217,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: remove stale allowlist matcher cache</pre>",
         "published": "2026-03-11T00:00:04",
         "category": "bugfix",
-        "short_summary": "修复：移除过期的允许列表匹配器缓存。"
+        "short_summary": "修复：删除过期的允许列表匹配器缓存。"
       },
       {
         "source": "rss",
@@ -226,10 +226,10 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: avoid cron embedded lane deadlock</pre>",
         "published": "2026-03-10T23:56:21",
         "category": "bugfix",
-        "short_summary": "解决Cron嵌入式死锁问题。"
+        "short_summary": "解决Cron嵌入式车道死锁问题。"
       }
     ]
   },
   "audio": "2026-03-10.mp3",
-  "generated_at": "2026-03-10T18:47:20.965292"
+  "generated_at": "2026-03-10T18:53:20.938887"
 }
