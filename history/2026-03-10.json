@@ -1,49 +1,41 @@
 {
   "date": "2026-03-10",
-  "total_items": 23,
+  "total_items": 6,
   "categories": {
-    "general": 13,
-    "skill": 4,
-    "bugfix": 6
+    "bugfix": 3,
+    "general": 3
   },
   "entries": {
+    "bugfix": [
+      {
+        "source": "rss",
+        "title": "fix(node-host): fail closed on unbound interpreter approvals",
+        "link": "https://github.com/openclaw/openclaw/commit/daaf211e20feaab89f8c1a65343b0daf064a7322",
+        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(node-host): fail closed on unbound interpreter approvals</pre>",
+        "published": "2026-03-11T02:36:38",
+        "category": "bugfix",
+        "short_summary": "当解释器未经授权时，会主动关闭以确保安全。"
+      },
+      {
+        "source": "rss",
+        "title": "fix(security): bind system.run approvals to exact argv text",
+        "link": "https://github.com/openclaw/openclaw/commit/7289c19f1a35fe82f8047c11de9d7cc0429ae112",
+        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): bind system.run approvals to exact argv text</pre>",
+        "published": "2026-03-11T01:25:31",
+        "category": "bugfix",
+        "short_summary": "提高系统运行安全，确保准确执行命令。"
+      },
+      {
+        "source": "rss",
+        "title": "fix(security): enforce target account configWrites",
+        "link": "https://github.com/openclaw/openclaw/commit/8eac9394170e2218a55fab774c310ff9bcaad19f",
+        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): enforce target account configWrites</pre>",
+        "published": "2026-03-11T01:24:36",
+        "category": "bugfix",
+        "short_summary": "安全性得到了提高，账户配置写入受到限制。"
+      }
+    ],
     "general": [
-      {
-        "source": "rss",
-        "title": "Switch to org-wide funding.yml file",
-        "link": "https://github.com/openclaw/openclaw/commit/841f3b4af5776acf40bd508e9e20da4af6a471ef",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Switch to org-wide funding.yml file</pre>",
-        "published": "2026-03-11T01:55:08",
-        "category": "general",
-        "short_summary": "使用ChatGPT和Edge-TTS，实现办公自动化，省时省力，工作更高效！"
-      },
-      {
-        "source": "rss",
-        "title": "refactor(security): simplify system.run approval model",
-        "link": "https://github.com/openclaw/openclaw/commit/68c674d37c3c14b85cc154d595fc7844b36a6c2b",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor(security): simplify system.run approval model</pre>",
-        "published": "2026-03-11T01:43:06",
-        "category": "general",
-        "short_summary": "使用OpenClaw和ChatGPT，让办公自动化更方便、更安全，省心省力！"
-      },
-      {
-        "source": "rss",
-        "title": "refactor: unify gateway credential planning",
-        "link": "https://github.com/openclaw/openclaw/commit/5716e524171b3a6e5d3d0077612ba78d8faa3de6",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: unify gateway credential planning</pre>",
-        "published": "2026-03-11T01:37:25",
-        "category": "general",
-        "short_summary": "借助ChatGPT等智能工具，办公自动化变得更方便、更好用，帮助你节省时间和精力，实现更高效的工作体验！"
-      },
-      {
-        "source": "rss",
-        "title": "refactor(security): unify config write target policy",
-        "link": "https://github.com/openclaw/openclaw/commit/3a39dc4e18841d2a3986928fbeabcd36ae93b694",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor(security): unify config write target policy</pre>",
-        "published": "2026-03-11T01:35:04",
-        "category": "general",
-        "short_summary": "“安全配置变得更方便啦！现在，配置写入目标政策更加统一，使用OpenClaw等工具，办公自动化更加高效，省时省力！”"
-      },
       {
         "source": "rss",
         "title": "refactor: compile allowlist matchers",
@@ -51,52 +43,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: compile allowlist matchers</pre>",
         "published": "2026-03-11T00:07:47",
         "category": "general",
-        "short_summary": "现在有了OpenClaw，办公自动化变得更方便，ChatGPT也能帮你处理繁琐事，Edge-TTS让工作更高效！"
-      },
-      {
-        "source": "rss",
-        "title": "test: cover cron nested lane selection",
-        "link": "https://github.com/openclaw/openclaw/commit/fa0329c340761b7315ac025121b2308aa75734ff",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">test: cover cron nested lane selection</pre>",
-        "published": "2026-03-11T00:02:00",
-        "category": "general",
-        "short_summary": "“用OpenClaw的自动化工具，省时省力，办公更高效！”"
-      },
-      {
-        "source": "rss",
-        "title": "Merge remote-tracking branch 'origin/main'",
-        "link": "https://github.com/openclaw/openclaw/commit/8901032007562c1b6dab4fde53d3482a9cd16012",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Merge remote-tracking branch 'origin/main'</pre>",
-        "published": "2026-03-10T23:55:30",
-        "category": "general",
-        "short_summary": "使用OpenClaw等工具，办公自动化变得更方便，省时省力，生活更轻松！"
-      },
-      {
-        "source": "rss",
-        "title": "refactor: clarify archive staging intent",
-        "link": "https://github.com/openclaw/openclaw/commit/20237358d92413a1637486a316096dfbe771d03c",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: clarify archive staging intent</pre>",
-        "published": "2026-03-10T23:54:12",
-        "category": "general",
-        "short_summary": "用了OpenClaw等工具，办公软件变得更好用，文件归档更方便，节省了您的时间和精力！"
-      },
-      {
-        "source": "rss",
-        "title": "refactor: split tar.bz2 extraction helpers",
-        "link": "https://github.com/openclaw/openclaw/commit/0bac47de515c1da423cd50745cb94789923b6fb9",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: split tar.bz2 extraction helpers</pre>",
-        "published": "2026-03-10T23:53:32",
-        "category": "general",
-        "short_summary": "现在，办公自动化变得更方便了！有了 Edge-TTS 等工具，我们可以更快地处理工作，省时省力。处理压缩文件也变得更容易，用起来更安全！"
-      },
-      {
-        "source": "rss",
-        "title": "refactor: rename tar archive preflight checker",
-        "link": "https://github.com/openclaw/openclaw/commit/9c64508822929b964307b9d0ad17c470dc8cef0e",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: rename tar archive preflight checker</pre>",
-        "published": "2026-03-10T23:52:51",
-        "category": "general",
-        "short_summary": "我们的办公自动化工具现在更好用了！借助OpenClaw等技术，文件归档检查变得更方便，节省了你的时间，让工作更轻松！"
+        "short_summary": "重新编写了编译白名单匹配器。"
       },
       {
         "source": "youtube",
@@ -108,7 +55,7 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/videos",
-        "short_summary": "用OpenClaw和ChatGPT，让办公自动化更方便，省时省力，生活更轻松！"
+        "short_summary": "观看视频，了解更多信息。"
       },
       {
         "source": "youtube",
@@ -120,116 +67,10 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/streams",
-        "short_summary": "用了OpenClaw和ChatGPT等工具，办公自动化变得更方便，更好用！现在可以省时省力，自动化处理一些事情，生活和工作更轻松！"
-      },
-      {
-        "source": "youtube",
-        "title": "OpenAI - Shorts",
-        "url": "https://www.youtube.com/@OpenAI/shorts",
-        "duration": 0,
-        "uploader": "OpenAI",
-        "upload_date": "",
-        "category": "general",
-        "published": "2026-03-10",
-        "link": "https://www.youtube.com/@OpenAI/shorts",
-        "short_summary": "用OpenClaw和ChatGPT，让办公更高效，消息更方便，省时省力！"
-      }
-    ],
-    "skill": [
-      {
-        "source": "rss",
-        "title": "fix: harden subagent control boundaries",
-        "link": "https://github.com/openclaw/openclaw/commit/aad014c7c1fa3db5d9634c7f3ed781e3c7c012e5",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: harden subagent control boundaries</pre>",
-        "published": "2026-03-11T01:44:38",
-        "category": "skill",
-        "short_summary": "“Edge-TTS 的智能助手变得更好用，自动化办公让你更省事！”"
-      },
-      {
-        "source": "rss",
-        "title": "fix(security): restrict leaf subagent control scope",
-        "link": "https://github.com/openclaw/openclaw/commit/ecdbd8aa523d25f5da41d3984bfca72612628a95",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): restrict leaf subagent control scope</pre>",
-        "published": "2026-03-11T01:12:22",
-        "category": "skill",
-        "short_summary": "办公自动化变得更安全、更方便了！现在，OpenClaw 的智能办公助手可以更好地保护你的数据，自动处理一些重复性任务，让你有更多时间做自己喜欢的事情！"
-      },
-      {
-        "source": "rss",
-        "title": "Infra: extract backup and plugin path helpers",
-        "link": "https://github.com/openclaw/openclaw/commit/3ba64916599b57978c42aafd2857d4e4fdb44d9c",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Infra: extract backup and plugin path helpers</pre>",
-        "published": "2026-03-11T00:16:35",
-        "category": "skill",
-        "short_summary": "有了OpenClaw，办公自动化更方便！它省时省力，让工作更高效，生活更轻松！"
-      },
-      {
-        "source": "rss",
-        "title": "SecretRef: harden custom/provider secret persistence and reuse (#42554)",
-        "link": "https://github.com/openclaw/openclaw/commit/36d2ae2a22353cf657ce1750d5370bfa4e1c99c9",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">SecretRef: harden custom/provider secret persistence and reuse (#42554)\n\n* Models: gate custom provider keys by usable secret semantics\n\n* Config: project runtime writes onto source snapshot\n\n* Models: prevent stale apiKey preservation for marker-managed providers\n\n* Runner: strip SecretRef marker headers from resolved models\n\n* Secrets: scan active agent models.json path in audit\n\n* Config: guard runtime-source projection for unrelated configs\n\n* Extensions: fix onboarding type errors in CI\n\n* Tests: align setup helper account-enabled expectation\n\n* Secrets audit: harden models.json file reads\n\n* fix: harden SecretRef custom/provider secret persistence (#42554) (thanks @joshavant)</pre>",
-        "published": "2026-03-10T23:55:10",
-        "category": "skill",
-        "short_summary": "“办公自动化”变得更方便！借助OpenClaw和ChatGPT等工具，文件和数据处理更安全、更高效，不用再花费大量时间和精力。"
-      }
-    ],
-    "bugfix": [
-      {
-        "source": "rss",
-        "title": "fix(security): bind system.run approvals to exact argv text",
-        "link": "https://github.com/openclaw/openclaw/commit/7289c19f1a35fe82f8047c11de9d7cc0429ae112",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): bind system.run approvals to exact argv text</pre>",
-        "published": "2026-03-11T01:25:31",
-        "category": "bugfix",
-        "short_summary": "用了OpenClaw和ChatGPT，这些工具让办公自动化更方便、更安全，帮你节省时间和精力！"
-      },
-      {
-        "source": "rss",
-        "title": "fix(security): enforce target account configWrites",
-        "link": "https://github.com/openclaw/openclaw/commit/8eac9394170e2218a55fab774c310ff9bcaad19f",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): enforce target account configWrites</pre>",
-        "published": "2026-03-11T01:24:36",
-        "category": "bugfix",
-        "short_summary": "使用OpenClaw和ChatGPT，办公自动化变得更方便，省时省力，日常工作更高效！"
-      },
-      {
-        "source": "rss",
-        "title": "fix(sandbox): pin fs-bridge staged writes",
-        "link": "https://github.com/openclaw/openclaw/commit/11924a70264f235b2b1d47e3d32a5f0dae111bb1",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(sandbox): pin fs-bridge staged writes</pre>",
-        "published": "2026-03-11T01:15:47",
-        "category": "bugfix",
-        "short_summary": "用了Edge-TTS，办公自动化工具更好用，节省时间和精力！"
-      },
-      {
-        "source": "rss",
-        "title": "fix: fail closed for unresolved local gateway auth refs",
-        "link": "https://github.com/openclaw/openclaw/commit/702f6f3305653922548ed2f5c78228ef3c3573e7",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: fail closed for unresolved local gateway auth refs</pre>",
-        "published": "2026-03-11T01:14:06",
-        "category": "bugfix",
-        "short_summary": "办公自动化变得更方便了！OpenClaw 和 ChatGPT 的结合，让工作效率大幅提升，省时省力，生活更轻松！"
-      },
-      {
-        "source": "rss",
-        "title": "fix: remove stale allowlist matcher cache",
-        "link": "https://github.com/openclaw/openclaw/commit/f604cbedf3d23219939b43850e5ce4d3a04b2cde",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: remove stale allowlist matcher cache</pre>",
-        "published": "2026-03-11T00:00:04",
-        "category": "bugfix",
-        "short_summary": "办公自动化变得更方便，OpenClaw帮你节省时间和精力，用起来更顺手！"
-      },
-      {
-        "source": "rss",
-        "title": "fix: avoid cron embedded lane deadlock",
-        "link": "https://github.com/openclaw/openclaw/commit/825a435709e98a1683a60e737a77ffe98122c284",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: avoid cron embedded lane deadlock</pre>",
-        "published": "2026-03-10T23:56:21",
-        "category": "bugfix",
-        "short_summary": "用了OpenClaw等好工具，办公自动化变得更方便、更快捷，帮你省时省力！"
+        "short_summary": "OpenAI 的实时功能让你更方便地获取信息。"
       }
     ]
   },
   "audio": "2026-03-10.mp3",
-  "generated_at": "2026-03-10T19:09:01.792551"
+  "generated_at": "2026-03-10T19:38:14.239720"
 }

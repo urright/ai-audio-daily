@@ -33,14 +33,15 @@ data/audio/*
 *.mp3
 
 # 部署
-# 只忽略 public/ 下的未明确列出的文件
+# 只忽略 docs/ 下的未明确列出的文件
 # 需要跟踪：index.html, archive/, audio/
-public/*
-!public/index.html
-!public/archive/
-!public/archive/*
-!public/audio/
-!public/audio/*
-!public/.gitkeep
+docs/*
+!docs/index.html
+!docs/archive/
+!docs/archive/*
+!docs/audio/
+!docs/audio/*
+!docs/audio/*.mp3
+!docs/.gitkeep
 /logs/*
 !logs/.gitkeep

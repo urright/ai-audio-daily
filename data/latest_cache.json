@@ -1,6 +1,22 @@
 [
   {
     "source": "rss",
+    "title": "fix(node-host): fail closed on unbound interpreter approvals",
+    "link": "https://github.com/openclaw/openclaw/commit/daaf211e20feaab89f8c1a65343b0daf064a7322",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(node-host): fail closed on unbound interpreter approvals</pre>",
+    "published": "2026-03-11T02:36:38",
+    "category": "bugfix"
+  },
+  {
+    "source": "rss",
+    "title": "refactor: unify sandbox fs bridge mutations",
+    "link": "https://github.com/openclaw/openclaw/commit/72b0e00eab617c350646b1a5a46c6417e75d4c7e",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: unify sandbox fs bridge mutations</pre>",
+    "published": "2026-03-11T02:10:23",
+    "category": "general"
+  },
+  {
+    "source": "rss",
     "title": "Switch to org-wide funding.yml file",
     "link": "https://github.com/openclaw/openclaw/commit/841f3b4af5776acf40bd508e9e20da4af6a471ef",
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Switch to org-wide funding.yml file</pre>",
@@ -141,22 +157,6 @@
     "link": "https://github.com/openclaw/openclaw/commit/20237358d92413a1637486a316096dfbe771d03c",
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: clarify archive staging intent</pre>",
     "published": "2026-03-10T23:54:12",
-    "category": "general"
-  },
-  {
-    "source": "rss",
-    "title": "refactor: split tar.bz2 extraction helpers",
-    "link": "https://github.com/openclaw/openclaw/commit/0bac47de515c1da423cd50745cb94789923b6fb9",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: split tar.bz2 extraction helpers</pre>",
-    "published": "2026-03-10T23:53:32",
-    "category": "general"
-  },
-  {
-    "source": "rss",
-    "title": "refactor: rename tar archive preflight checker",
-    "link": "https://github.com/openclaw/openclaw/commit/9c64508822929b964307b9d0ad17c470dc8cef0e",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: rename tar archive preflight checker</pre>",
-    "published": "2026-03-10T23:52:51",
     "category": "general"
   },
   {
