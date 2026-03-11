@@ -1,0 +1,24 @@
+📅 2026-03-11 - OpenClaw 日报 - IT 业界新闻（AI、科技公共媒体）
+
+== feature ==
+
+• Meta Is Developing 4 New Chips to Power Its AI and Recommendation Systems
+  Meta正在开发4款新芯片，用于AI和推荐系统，这是它自研芯片的最新尝试，同时仍花大钱购买英伟达等公司的设备。
+
+• I Used Google’s New Gemini-Powered ‘Help Me Create’ Tool in Docs. It’s Great at Corporate-Speak
+  谷歌办公软件加入AI助手，能根据邮件和网页内容帮你起草文件，省时又方便。
+
+• New ways to learn math and science in ChatGPT
+  ChatGPT新增了数学和科学的互动图片学习，学生能实时动手试公式和概念，让学习更直观高效。
+
+== general ==
+
+• OpenAI - Videos
+  OpenAI的视频相关功能让用户能更方便地创建和使用视频内容，节省时间。
+
+• OpenAI - Live
+  OpenAI通过直播实时更新信息，用户能及时获取最新动态，更方便快捷。
+
+• OpenAI - Shorts
+  如果原文是技术文档，
+
