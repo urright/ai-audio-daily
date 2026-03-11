@@ -48,8 +48,10 @@ DETAIL_TEMPLATE = """
             <p>
                 {% if entry.source == 'youtube' %}
                 <a href="{{ entry.url }}" target="_blank" class="audio-link">🎬 观看原视频</a>
+                <span class="source-tag" style="margin-left: 8px; font-size: 0.8em; color: #888;">YouTube</span>
                 {% else %}
                 <a href="{{ entry.link }}" target="_blank" class="audio-link">📖 阅读原文</a>
+                <span class="source-tag" style="margin-left: 8px; font-size: 0.8em; color: #888;">RSS</span>
                 {% endif %}
             </p>
         </div>
