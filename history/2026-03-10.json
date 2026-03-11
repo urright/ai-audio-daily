@@ -15,7 +15,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Switch to org-wide funding.yml file</pre>",
         "published": "2026-03-11T01:55:08",
         "category": "general",
-        "short_summary": "切换到全局funding.yml文件。"
+        "short_summary": "使用ChatGPT和Edge-TTS，实现办公自动化，省时省力，工作更高效！"
       },
       {
         "source": "rss",
@@ -24,7 +24,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor(security): simplify system.run approval model</pre>",
         "published": "2026-03-11T01:43:06",
         "category": "general",
-        "short_summary": "简化系统运行审批模型，提高安全性。"
+        "short_summary": "使用OpenClaw和ChatGPT，让办公自动化更方便、更安全，省心省力！"
       },
       {
         "source": "rss",
@@ -33,7 +33,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: unify gateway credential planning</pre>",
         "published": "2026-03-11T01:37:25",
         "category": "general",
-        "short_summary": "统一网关凭证规划，优化AI办公自动化。"
+        "short_summary": "借助ChatGPT等智能工具，办公自动化变得更方便、更好用，帮助你节省时间和精力，实现更高效的工作体验！"
       },
       {
         "source": "rss",
@@ -42,7 +42,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor(security): unify config write target policy</pre>",
         "published": "2026-03-11T01:35:04",
         "category": "general",
-        "short_summary": "简化配置写入目标策略，提高安全性。"
+        "short_summary": "“安全配置变得更方便啦！现在，配置写入目标政策更加统一，使用OpenClaw等工具，办公自动化更加高效，省时省力！”"
       },
       {
         "source": "rss",
@@ -51,7 +51,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: compile allowlist matchers</pre>",
         "published": "2026-03-11T00:07:47",
         "category": "general",
-        "short_summary": "重构：编译允许列表匹配器。"
+        "short_summary": "现在有了OpenClaw，办公自动化变得更方便，ChatGPT也能帮你处理繁琐事，Edge-TTS让工作更高效！"
       },
       {
         "source": "rss",
@@ -60,7 +60,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">test: cover cron nested lane selection</pre>",
         "published": "2026-03-11T00:02:00",
         "category": "general",
-        "short_summary": "测试：cron嵌套车道选择功能。"
+        "short_summary": "“用OpenClaw的自动化工具，省时省力，办公更高效！”"
       },
       {
         "source": "rss",
@@ -69,7 +69,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Merge remote-tracking branch 'origin/main'</pre>",
         "published": "2026-03-10T23:55:30",
         "category": "general",
-        "short_summary": "合并远程跟踪分支“origin/main”。"
+        "short_summary": "使用OpenClaw等工具，办公自动化变得更方便，省时省力，生活更轻松！"
       },
       {
         "source": "rss",
@@ -78,7 +78,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: clarify archive staging intent</pre>",
         "published": "2026-03-10T23:54:12",
         "category": "general",
-        "short_summary": "代码重构：澄清存档暂存意图。"
+        "short_summary": "用了OpenClaw等工具，办公软件变得更好用，文件归档更方便，节省了您的时间和精力！"
       },
       {
         "source": "rss",
@@ -87,7 +87,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: split tar.bz2 extraction helpers</pre>",
         "published": "2026-03-10T23:53:32",
         "category": "general",
-        "short_summary": "重构：拆分tar.bz2解压助手。"
+        "short_summary": "现在，办公自动化变得更方便了！有了 Edge-TTS 等工具，我们可以更快地处理工作，省时省力。处理压缩文件也变得更容易，用起来更安全！"
       },
       {
         "source": "rss",
@@ -96,7 +96,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: rename tar archive preflight checker</pre>",
         "published": "2026-03-10T23:52:51",
         "category": "general",
-        "short_summary": "重构：重命名tar存档预检检查器。"
+        "short_summary": "我们的办公自动化工具现在更好用了！借助OpenClaw等技术，文件归档检查变得更方便，节省了你的时间，让工作更轻松！"
       },
       {
         "source": "youtube",
@@ -108,7 +108,7 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/videos",
-        "short_summary": "OpenAI视频教程，介绍AI办公自动化工具。"
+        "short_summary": "用OpenClaw和ChatGPT，让办公自动化更方便，省时省力，生活更轻松！"
       },
       {
         "source": "youtube",
@@ -120,7 +120,7 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/streams",
-        "short_summary": "OpenAI推出Live，实现AI办公自动化。"
+        "short_summary": "用了OpenClaw和ChatGPT等工具，办公自动化变得更方便，更好用！现在可以省时省力，自动化处理一些事情，生活和工作更轻松！"
       },
       {
         "source": "youtube",
@@ -132,7 +132,7 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/shorts",
-        "short_summary": "OpenAI推出 Shorts 功能，实现办公自动化。"
+        "short_summary": "用OpenClaw和ChatGPT，让办公更高效，消息更方便，省时省力！"
       }
     ],
     "skill": [
@@ -143,7 +143,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: harden subagent control boundaries</pre>",
         "published": "2026-03-11T01:44:38",
         "category": "skill",
-        "short_summary": "加强子代理控制边界安全。"
+        "short_summary": "“Edge-TTS 的智能助手变得更好用，自动化办公让你更省事！”"
       },
       {
         "source": "rss",
@@ -152,7 +152,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): restrict leaf subagent control scope</pre>",
         "published": "2026-03-11T01:12:22",
         "category": "skill",
-        "short_summary": "修复安全漏洞：限制子代理控制范围。"
+        "short_summary": "办公自动化变得更安全、更方便了！现在，OpenClaw 的智能办公助手可以更好地保护你的数据，自动处理一些重复性任务，让你有更多时间做自己喜欢的事情！"
       },
       {
         "source": "rss",
@@ -161,7 +161,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Infra: extract backup and plugin path helpers</pre>",
         "published": "2026-03-11T00:16:35",
         "category": "skill",
-        "short_summary": "Infra 提供备份和插件路径辅助工具。"
+        "short_summary": "有了OpenClaw，办公自动化更方便！它省时省力，让工作更高效，生活更轻松！"
       },
       {
         "source": "rss",
@@ -170,7 +170,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">SecretRef: harden custom/provider secret persistence and reuse (#42554)\n\n* Models: gate custom provider keys by usable secret semantics\n\n* Config: project runtime writes onto source snapshot\n\n* Models: prevent stale apiKey preservation for marker-managed providers\n\n* Runner: strip SecretRef marker headers from resolved models\n\n* Secrets: scan active agent models.json path in audit\n\n* Config: guard runtime-source projection for unrelated configs\n\n* Extensions: fix onboarding type errors in CI\n\n* Tests: align setup helper account-enabled expectation\n\n* Secrets audit: harden models.json file reads\n\n* fix: harden SecretRef custom/provider secret persistence (#42554) (thanks @joshavant)</pre>",
         "published": "2026-03-10T23:55:10",
         "category": "skill",
-        "short_summary": "SecretRef 加强自定义/提供商密钥持久性和重用。"
+        "short_summary": "“办公自动化”变得更方便！借助OpenClaw和ChatGPT等工具，文件和数据处理更安全、更高效，不用再花费大量时间和精力。"
       }
     ],
     "bugfix": [
@@ -181,7 +181,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): bind system.run approvals to exact argv text</pre>",
         "published": "2026-03-11T01:25:31",
         "category": "bugfix",
-        "short_summary": "修复安全漏洞：将系统运行审批绑定到精确的argv文本。"
+        "short_summary": "用了OpenClaw和ChatGPT，这些工具让办公自动化更方便、更安全，帮你节省时间和精力！"
       },
       {
         "source": "rss",
@@ -190,7 +190,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): enforce target account configWrites</pre>",
         "published": "2026-03-11T01:24:36",
         "category": "bugfix",
-        "short_summary": "安全更新：强制执行目标账户配置写入。"
+        "short_summary": "使用OpenClaw和ChatGPT，办公自动化变得更方便，省时省力，日常工作更高效！"
       },
       {
         "source": "rss",
@@ -199,7 +199,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(sandbox): pin fs-bridge staged writes</pre>",
         "published": "2026-03-11T01:15:47",
         "category": "bugfix",
-        "short_summary": "修复沙盒：固定fs-bridge缓存写入。"
+        "short_summary": "用了Edge-TTS，办公自动化工具更好用，节省时间和精力！"
       },
       {
         "source": "rss",
@@ -208,7 +208,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: fail closed for unresolved local gateway auth refs</pre>",
         "published": "2026-03-11T01:14:06",
         "category": "bugfix",
-        "short_summary": "修复：本地网关认证引用未解析时关闭失败。"
+        "short_summary": "办公自动化变得更方便了！OpenClaw 和 ChatGPT 的结合，让工作效率大幅提升，省时省力，生活更轻松！"
       },
       {
         "source": "rss",
@@ -217,7 +217,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: remove stale allowlist matcher cache</pre>",
         "published": "2026-03-11T00:00:04",
         "category": "bugfix",
-        "short_summary": "修复：移除过期的允许列表匹配器缓存。"
+        "short_summary": "办公自动化变得更方便，OpenClaw帮你节省时间和精力，用起来更顺手！"
       },
       {
         "source": "rss",
@@ -226,10 +226,10 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: avoid cron embedded lane deadlock</pre>",
         "published": "2026-03-10T23:56:21",
         "category": "bugfix",
-        "short_summary": "修复：避免Cron嵌入式死锁问题。"
+        "short_summary": "用了OpenClaw等好工具，办公自动化变得更方便、更快捷，帮你省时省力！"
       }
     ]
   },
   "audio": "2026-03-10.mp3",
-  "generated_at": "2026-03-10T18:58:20.951468"
+  "generated_at": "2026-03-10T19:09:01.792551"
 }

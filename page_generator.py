@@ -171,7 +171,7 @@ class PageGenerator:
             categorized=categorized_data,
             category_name=self.category_name,
             total_items=total,
-            audio_filename=f"../audio/{audio_filename}"  # 相对路径：从 archive/ 到 audio/
+            audio_filename=audio_filename  # 纯文件名，模板内使用 ../../audio/{{ audio_filename }}
         )
         # 输出到 archive/YYYY-MM-DD/index.html
         archive_dir = self.output_dir / "archive" / date_str

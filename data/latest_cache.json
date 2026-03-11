@@ -1,6 +1,14 @@
 [
   {
     "source": "rss",
+    "title": "Switch to org-wide funding.yml file",
+    "link": "https://github.com/openclaw/openclaw/commit/841f3b4af5776acf40bd508e9e20da4af6a471ef",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Switch to org-wide funding.yml file</pre>",
+    "published": "2026-03-11T01:55:08",
+    "category": "general"
+  },
+  {
+    "source": "rss",
     "title": "fix: harden subagent control boundaries",
     "link": "https://github.com/openclaw/openclaw/commit/aad014c7c1fa3db5d9634c7f3ed781e3c7c012e5",
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: harden subagent control boundaries</pre>",
@@ -149,14 +157,6 @@
     "link": "https://github.com/openclaw/openclaw/commit/9c64508822929b964307b9d0ad17c470dc8cef0e",
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: rename tar archive preflight checker</pre>",
     "published": "2026-03-10T23:52:51",
-    "category": "general"
-  },
-  {
-    "source": "rss",
-    "title": "refactor: extract archive staging helpers",
-    "link": "https://github.com/openclaw/openclaw/commit/6565ae1857b1db906b9c429ec651b9d5f1eb0ea8",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: extract archive staging helpers</pre>",
-    "published": "2026-03-10T23:52:31",
     "category": "general"
   },
   {

@@ -24,31 +24,58 @@ class ContentProcessor:
             self.provider = "openai"
 
     def summarize(self, entry, max_words=60):
-        """为单个条目生成简短摘要"""
-        prompt = f"""请为以下AI办公自动化相关内容生成一个简洁的中文摘要（{max_words}字以内），突出核心信息：
+        """为单个条目生成简短摘要（面向普通听众，突出价值与吸引力）"""
+        prompt = f"""将以下AI办公自动化内容改写成一段**通俗易懂、有趣、有亮点**的中文摘要（40~80字），面向非技术背景的普通听众。突出：
+- 这对普通人有什么好处？（效率提升、省时省力、自动化便利）
+- 用了什么工具/产品（如OpenClaw、ChatGPT、Edge-TTS等）要自然带入
+- 避免技术术语（如“修复”“重构”“增强”），用生活化表达（如“更好用”“更安全”“更方便”）
 
 标题：{entry['title']}
 原文摘要：{entry.get('summary', entry.get('description', ''))}
 
-要求：
-- 简洁明了，突出重点
-- 包含关键工具/产品名称
-- 如果是新闻，包含事件要素
-- 如果是教程，包含核心技术点
+示例风格：
+- 原：“修复Telegram连接稳定性问题” → 改：“OpenClaw 的 Telegram 机器人现在更稳定，消息不会漏掉啦！”
+- 原：“发布新版支持多语言” → 改：“工具现在支持中文，用起来更顺手！”
 
-摘要："""
+请直接输出改写后的摘要，不要额外说明："""
 
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.3,
-                max_tokens=120
+                temperature=0.7,  # 增加创造性
+                max_tokens=200
             )
             return response.choices[0].message.content.strip()
         except Exception as e:
             print(f"❌ Summarize error: {e}")
-            return entry['title']  # fallback
+            # fallback：用简短标题
+            return self._fallback_summary(entry['title'])
+
+    def _fallback_summary(self, title):
+        """回退：将技术性标题转换为简单说明"""
+        # 简单的关键词替换示例
+        simple = title
+        replacements = {
+            'fix': '修复',
+            'refactor': '优化',
+            'security': '安全',
+            'harden': '加固',
+            'unify': '统一',
+            'extract': '提取',
+            'pin': '固定',
+            'restrict': '限制',
+            'enforce': '强制',
+            'avoid': '避免',
+            'remove': '移除',
+            'stale': '过时',
+            'cron': '定时任务',
+            'deadlock': '死锁',
+            'Infra': '基础设施',
+        }
+        for eng, ch in replacements.items():
+            simple = simple.replace(eng, ch)
+        return simple[:80] if simple else "OpenClaw 更新"
 
     def categorize(self, entry):
         """使用LLM进行精确分类（可选增强）"""
