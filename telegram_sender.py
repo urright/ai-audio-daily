@@ -22,7 +22,7 @@ class TelegramSender:
                 files = {'audio': audio}
                 data = {
                     'chat_id': self.chat_id,
-                    'caption': caption or '📢 OpenClaw信息日报 - 语音摘要',
+                    'caption': caption or '📢 OpenClaw生态日报 - 语音摘要',
                     'parse_mode': 'HTML'
                 }
                 resp = requests.post(url, files=files, data=data, timeout=30)
@@ -69,7 +69,7 @@ class TelegramSender:
 
         # 2. 发送详情页面链接
         page_link = f"📋 <a href='{page_url}'>查看详细图文报告</a>"
-        self.send_message(f"{page_link}\n\n📊 今日共收集 {total_items} 条AI自动化资讯")
+        self.send_message(f"{page_link}\n\n📊 今日共收集 {total_items} 条OpenClaw生态资讯")
 
 if __name__ == "__main__":
     # 测试
