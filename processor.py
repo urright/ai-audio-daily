@@ -22,7 +22,6 @@ class ContentProcessor:
             self.provider = "openai"
 
     def parse_date(self, entry):
-        """将 published 字段转为 datetime 用于排序"""
         date_str = entry.get('published')
         if not date_str:
             return datetime.min
@@ -34,18 +33,13 @@ class ContentProcessor:
             return datetime.min
 
     def is_high_value(self, entry):
-        """
-        判断条目是否对普通听众有价值（应被保留）。
-        原则：只保留新功能、安全更新、明显影响用户的修复、官方教程/视频。
-        过滤掉所有技术债务、基础设施、琐碎修改。
-        """
-        # YouTube 视频类默认保留
+        """判断条目是否对普通听众有价值（应被保留）。"""
         if entry.get('source') == 'youtube':
             return True
 
         title = entry.get('title', '').lower().strip()
 
-        # 1. 保留明确有价值的前缀（不区分大小写）
+        # 前缀白名单（这些特征强烈表明有价值）
         valuable_prefixes = [
             'feat', 'feature', 'release', 'security', 'announce', 'announcement',
             'video', 'tutorial', 'guide', 'docs:', 'breaking'
@@ -54,30 +48,48 @@ class ContentProcessor:
             if title.startswith(prefix):
                 return True
 
-        # 2. 对 fix 类：只保留涉及用户可见问题或安全漏洞的
+        # fix 类：只保留涉及安全问题或用户可见严重问题
         if title.startswith('fix'):
             impact_keywords = [
                 'security', 'vulnerability', 'crash', 'error', 'bug',
                 'issue', 'breach', 'leak', 'bypass', 'fail', 'loss',
                 'incorrect', 'wrong', 'critical', 'important', 'user',
-                'data loss', 'authentication', 'authorization', 'vulnerable'
+                'data loss', 'authentication', 'authorization'
             ]
-            check_text = title + ' ' + entry.get('summary', '')
-            if any(kw in check_text.lower() for kw in impact_keywords):
+            text = title + ' ' + entry.get('summary', '')
+            if any(kw in text.lower() for kw in impact_keywords):
                 return True
             else:
-                return False  # 琐碎的 fix
+                return False
 
-        # 3. 标题中包含明显用户价值关键词
-        value_indicators = [
-            'new', 'add', 'introduce', 'support', 'improve', 'enhance',
-            'update', 'upgrade', 'enable', 'allow', 'launch', 'publish',
-            'announce', 'release', 'available', 'recommend'
-        ]
-        if any(kw in title for kw in value_indicators):
+        # 标题中是否包含高价值动词（作为独立单词）
+        value_pattern = re.compile(
+            r'\b(?:new|add|introduce|support|improve|enhance|update|upgrade|launch|publish|announce|release|available)\b',
+            re.IGNORECASE
+        )
+        if value_pattern.search(title):
             return True
 
-        # 4. 其他情况视为低价值（技术债务、重构、维护等）
+        # 低价值特征一旦命中直接拒绝
+        low_value_indicators = [
+            'refactor', 'chore:', 'ci:', 'test:', 'docs:', 'typo', 'format', 'lint',
+            'deps', 'bump', 'build:', 'auto', 'bot', 'workflow', 'github actions',
+            'update readme', 'update .gitignore', 'update license', 'update changelog',
+            'version bump', 'prepare for release', 'infra', 'extract', 'compile',
+            'pin', 'unify', 'simplify', 'split', 'rename', 'clarify', 'hack', 'wip',
+            'todo', 'minor', 'merge ', 'style'
+        ]
+        for lv in low_value_indicators:
+            if lv in title:
+                return False
+
+        if len(title) < 12 and not entry.get('summary'):
+            return False
+
+        if re.match(r'^[^\w\s]+$', title):
+            return False
+
+        # 其余不确定的视为低价值（宁可错杀，不放过噪音）
         return False
 
     def summarize(self, entry):
@@ -85,7 +97,6 @@ class ContentProcessor:
         title = entry.get('title', '').strip()
         raw = entry.get('summary', entry.get('description', '')).strip()
 
-        # 选择参考文本
         if raw and len(raw) > 20:
             source_text = f"标题：{title}\n原文：{raw}"
         else:
@@ -116,37 +127,32 @@ class ContentProcessor:
             return self._simple_fallback(title)
 
     def _simple_fallback(self, title):
-        """回退：去掉常见前缀，保留核心"""
         cleaned = re.sub(r'^(fix|feat|feature|refactor|chore|test|docs|style|perf|build|ci|security|release|announce):\s*', '', title, flags=re.IGNORECASE)
         return cleaned[:80] if cleaned else "OpenClaw 更新"
 
     def categorize(self, entry):
-        """使用关键词/标题进行简单分类"""
         title = entry.get('title', '').lower()
         if entry.get('source') == 'youtube':
             return 'general'
         if 'security' in title or 'vulnerability' in title:
             return 'bugfix'
-        if title.startswith('feat') or title.startswith('feature') or title.startswith('release'):
-            return 'release' if 'release' in title else 'feature'
+        if title.startswith('feat') or title.startswith('feature'):
+            return 'feature'
+        if title.startswith('release'):
+            return 'release'
         if title.startswith('fix'):
             return 'bugfix'
-        # 默认分类保持现有
         return entry.get('category', 'general')
 
     def process_all(self, entries):
-        """批量处理：价值筛选 → 标准化 → 摘要 → 分类 → 每类最多3条最新"""
         print("🔧 开始处理内容...")
-        # 1️⃣ 价值筛选
         valuable = [e for e in entries if self.is_high_value(e)]
         removed = len(entries) - len(valuable)
         print(f"  ⚠️  过滤掉 {removed} 条低价值内容，保留 {len(valuable)} 条")
 
-        # 2️⃣ 标准化 & 添加日期
         processed = []
         for i, entry in enumerate(valuable):
             print(f"  [{i+1}/{len(valuable)}] 处理: {entry['title'][:50]}...")
-            # 标准化 published
             if 'published' not in entry:
                 if 'upload_date' in entry and entry['upload_date']:
                     date_str = entry['upload_date']
@@ -156,30 +162,24 @@ class ContentProcessor:
                         entry['published'] = date_str
                 else:
                     entry['published'] = datetime.now().strftime("%Y-%m-%d")
-            # 标准化 link
             if 'link' not in entry and 'url' in entry:
                 entry['link'] = entry['url']
             elif 'link' not in entry:
                 entry['link'] = '#'
-            # 添加排序用日期
             entry['_dt'] = self.parse_date(entry)
-            # 生成摘要
             entry['short_summary'] = self.summarize(entry)
             entry['category'] = self.categorize(entry)
             processed.append(entry)
 
-        # 3️⃣ 按类别分组并截断（仅保留最新3条）
         categorized = {}
         for entry in processed:
             cat = entry['category']
             categorized.setdefault(cat, []).append(entry)
 
-        # 对每个类别排序（新的在前）并保留前3
         MAX_PER_CATEGORY = 3
-        for cat, entries in categorized.items():
-            entries.sort(key=lambda e: e['_dt'], reverse=True)
-            categorized[cat] = entries[:MAX_PER_CATEGORY]
-            # 清理临时字段
+        for cat, ents in categorized.items():
+            ents.sort(key=lambda e: e['_dt'], reverse=True)
+            categorized[cat] = ents[:MAX_PER_CATEGORY]
             for e in categorized[cat]:
                 if '_dt' in e:
                     del e['_dt']
@@ -191,7 +191,6 @@ class ContentProcessor:
 if __name__ == "__main__":
     with open("data/latest_cache.json", 'r', encoding='utf-8') as f:
         entries = json.load(f)
-
     processor = ContentProcessor()
     result = processor.process_all(entries[:3])
     print(json.dumps(result, indent=2, ensure_ascii=False))

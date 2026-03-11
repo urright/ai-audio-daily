@@ -9,12 +9,21 @@
     "bugfix": [
       {
         "source": "rss",
+        "title": "fix(security): pin staged writes and fs mutations",
+        "link": "https://github.com/openclaw/openclaw/commit/a0d5462571ab66d0106ae4076e3bed381a72a06c",
+        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): pin staged writes and fs mutations</pre>",
+        "published": "2026-03-11T02:38:00",
+        "category": "bugfix",
+        "short_summary": "提高安全性，防止文件系统被篡改。"
+      },
+      {
+        "source": "rss",
         "title": "fix(node-host): fail closed on unbound interpreter approvals",
         "link": "https://github.com/openclaw/openclaw/commit/daaf211e20feaab89f8c1a65343b0daf064a7322",
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(node-host): fail closed on unbound interpreter approvals</pre>",
         "published": "2026-03-11T02:36:38",
         "category": "bugfix",
-        "short_summary": "当解释器未经授权时，会主动关闭以确保安全。"
+        "short_summary": "提高安全性，当解释器未经授权时，直接拒绝访问。"
       },
       {
         "source": "rss",
@@ -23,28 +32,10 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): bind system.run approvals to exact argv text</pre>",
         "published": "2026-03-11T01:25:31",
         "category": "bugfix",
-        "short_summary": "提高系统运行安全，确保准确执行命令。"
-      },
-      {
-        "source": "rss",
-        "title": "fix(security): enforce target account configWrites",
-        "link": "https://github.com/openclaw/openclaw/commit/8eac9394170e2218a55fab774c310ff9bcaad19f",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): enforce target account configWrites</pre>",
-        "published": "2026-03-11T01:24:36",
-        "category": "bugfix",
-        "short_summary": "安全性得到了提高，账户配置写入受到限制。"
+        "short_summary": "提高安全性，系统运行时需要精确匹配命令参数。"
       }
     ],
     "general": [
-      {
-        "source": "rss",
-        "title": "refactor: compile allowlist matchers",
-        "link": "https://github.com/openclaw/openclaw/commit/f4a4b50cd528349154ccc5c1d7b975bcfdda94d6",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: compile allowlist matchers</pre>",
-        "published": "2026-03-11T00:07:47",
-        "category": "general",
-        "short_summary": "重新编写了编译白名单匹配器。"
-      },
       {
         "source": "youtube",
         "title": "OpenAI - Videos",
@@ -55,7 +46,7 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/videos",
-        "short_summary": "观看视频，了解更多信息。"
+        "short_summary": "观看视频了解更多信息。"
       },
       {
         "source": "youtube",
@@ -67,10 +58,22 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/streams",
-        "short_summary": "OpenAI 的实时功能让你更方便地获取信息。"
+        "short_summary": "实时获取信息和回答。"
+      },
+      {
+        "source": "youtube",
+        "title": "OpenAI - Shorts",
+        "url": "https://www.youtube.com/@OpenAI/shorts",
+        "duration": 0,
+        "uploader": "OpenAI",
+        "upload_date": "",
+        "category": "general",
+        "published": "2026-03-10",
+        "link": "https://www.youtube.com/@OpenAI/shorts",
+        "short_summary": "OpenAI的短视频功能，提供简洁易懂的信息。"
       }
     ]
   },
   "audio": "2026-03-10.mp3",
-  "generated_at": "2026-03-10T19:38:14.239720"
+  "generated_at": "2026-03-10T19:40:38.825309"
 }

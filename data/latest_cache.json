@@ -1,6 +1,22 @@
 [
   {
     "source": "rss",
+    "title": "test: restore fs bridge helper export",
+    "link": "https://github.com/openclaw/openclaw/commit/a52104c235a6378a8e7ecc77ab0cc5c047ea3ad9",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">test: restore fs bridge helper export</pre>",
+    "published": "2026-03-11T02:38:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "fix(security): pin staged writes and fs mutations",
+    "link": "https://github.com/openclaw/openclaw/commit/a0d5462571ab66d0106ae4076e3bed381a72a06c",
+    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): pin staged writes and fs mutations</pre>",
+    "published": "2026-03-11T02:38:00",
+    "category": "bugfix"
+  },
+  {
+    "source": "rss",
     "title": "fix(node-host): fail closed on unbound interpreter approvals",
     "link": "https://github.com/openclaw/openclaw/commit/daaf211e20feaab89f8c1a65343b0daf064a7322",
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(node-host): fail closed on unbound interpreter approvals</pre>",
@@ -141,22 +157,6 @@
     "link": "https://github.com/openclaw/openclaw/commit/8901032007562c1b6dab4fde53d3482a9cd16012",
     "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Merge remote-tracking branch 'origin/main'</pre>",
     "published": "2026-03-10T23:55:30",
-    "category": "general"
-  },
-  {
-    "source": "rss",
-    "title": "SecretRef: harden custom/provider secret persistence and reuse (#42554)",
-    "link": "https://github.com/openclaw/openclaw/commit/36d2ae2a22353cf657ce1750d5370bfa4e1c99c9",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">SecretRef: harden custom/provider secret persistence and reuse (#42554)\n\n* Models: gate custom provider keys by usable secret semantics\n\n* Config: project runtime writes onto source snapshot\n\n* Models: prevent stale apiKey preservation for marker-managed providers\n\n* Runner: strip SecretRef marker headers from resolved models\n\n* Secrets: scan active agent models.json path in audit\n\n* Config: guard runtime-source projection for unrelated configs\n\n* Extensions: fix onboarding type errors in CI\n\n* Tests: align setup helper account-enabled expectation\n\n* Secrets audit: harden models.json file reads\n\n* fix: harden SecretRef custom/provider secret persistence (#42554) (thanks @joshavant)</pre>",
-    "published": "2026-03-10T23:55:10",
-    "category": "skill"
-  },
-  {
-    "source": "rss",
-    "title": "refactor: clarify archive staging intent",
-    "link": "https://github.com/openclaw/openclaw/commit/20237358d92413a1637486a316096dfbe771d03c",
-    "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: clarify archive staging intent</pre>",
-    "published": "2026-03-10T23:54:12",
     "category": "general"
   },
   {
