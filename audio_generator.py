@@ -71,13 +71,8 @@ class AudioGenerator:
             parts.append("")
 
             for i, entry in enumerate(entries[:max_entries_per_category]):
-                title = entry.get('title', '').strip()
-                summary = entry.get('short_summary', '').strip()
-                if title and summary:
-                    parts.append(f"第{i+1}条：{title}。{summary}")
-                elif title:
-                    parts.append(f"第{i+1}条：{title}")
-                elif summary:
+                summary = entry.get('short_summary', '')
+                if summary:
                     parts.append(f"第{i+1}条：{summary}")
                 parts.append("")  # 条目间停顿
 

@@ -2,50 +2,21 @@
   "date": "2026-03-10",
   "total_items": 23,
   "categories": {
-    "skill": 4,
     "general": 13,
+    "skill": 4,
     "bugfix": 6
   },
   "entries": {
-    "skill": [
-      {
-        "source": "rss",
-        "title": "fix: harden subagent control boundaries",
-        "link": "https://github.com/openclaw/openclaw/commit/aad014c7c1fa3db5d9634c7f3ed781e3c7c012e5",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: harden subagent control boundaries</pre>",
-        "published": "2026-03-11T01:44:38",
-        "category": "skill",
-        "short_summary": "加强子代理控制边界安全。"
-      },
-      {
-        "source": "rss",
-        "title": "fix(security): restrict leaf subagent control scope",
-        "link": "https://github.com/openclaw/openclaw/commit/ecdbd8aa523d25f5da41d3984bfca72612628a95",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): restrict leaf subagent control scope</pre>",
-        "published": "2026-03-11T01:12:22",
-        "category": "skill",
-        "short_summary": "限制子代理控制范围，提高安全性。"
-      },
-      {
-        "source": "rss",
-        "title": "Infra: extract backup and plugin path helpers",
-        "link": "https://github.com/openclaw/openclaw/commit/3ba64916599b57978c42aafd2857d4e4fdb44d9c",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Infra: extract backup and plugin path helpers</pre>",
-        "published": "2026-03-11T00:16:35",
-        "category": "skill",
-        "short_summary": "Infra 提供备份和插件路径辅助工具。"
-      },
-      {
-        "source": "rss",
-        "title": "SecretRef: harden custom/provider secret persistence and reuse (#42554)",
-        "link": "https://github.com/openclaw/openclaw/commit/36d2ae2a22353cf657ce1750d5370bfa4e1c99c9",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">SecretRef: harden custom/provider secret persistence and reuse (#42554)\n\n* Models: gate custom provider keys by usable secret semantics\n\n* Config: project runtime writes onto source snapshot\n\n* Models: prevent stale apiKey preservation for marker-managed providers\n\n* Runner: strip SecretRef marker headers from resolved models\n\n* Secrets: scan active agent models.json path in audit\n\n* Config: guard runtime-source projection for unrelated configs\n\n* Extensions: fix onboarding type errors in CI\n\n* Tests: align setup helper account-enabled expectation\n\n* Secrets audit: harden models.json file reads\n\n* fix: harden SecretRef custom/provider secret persistence (#42554) (thanks @joshavant)</pre>",
-        "published": "2026-03-10T23:55:10",
-        "category": "skill",
-        "short_summary": "SecretRef 加强自定义/提供商密钥持久性和重用。"
-      }
-    ],
     "general": [
+      {
+        "source": "rss",
+        "title": "Switch to org-wide funding.yml file",
+        "link": "https://github.com/openclaw/openclaw/commit/841f3b4af5776acf40bd508e9e20da4af6a471ef",
+        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Switch to org-wide funding.yml file</pre>",
+        "published": "2026-03-11T01:55:08",
+        "category": "general",
+        "short_summary": "切换到全局funding.yml文件。"
+      },
       {
         "source": "rss",
         "title": "refactor(security): simplify system.run approval model",
@@ -53,7 +24,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor(security): simplify system.run approval model</pre>",
         "published": "2026-03-11T01:43:06",
         "category": "general",
-        "short_summary": "简化系统运行审批模型。"
+        "short_summary": "简化系统运行审批模型，提高安全性。"
       },
       {
         "source": "rss",
@@ -62,7 +33,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: unify gateway credential planning</pre>",
         "published": "2026-03-11T01:37:25",
         "category": "general",
-        "short_summary": "简化网关凭证规划，统一管理。"
+        "short_summary": "统一网关凭证规划，优化AI办公自动化。"
       },
       {
         "source": "rss",
@@ -71,7 +42,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor(security): unify config write target policy</pre>",
         "published": "2026-03-11T01:35:04",
         "category": "general",
-        "short_summary": "简化安全配置，统一写入策略。"
+        "short_summary": "简化配置写入目标策略，提高安全性。"
       },
       {
         "source": "rss",
@@ -80,7 +51,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: compile allowlist matchers</pre>",
         "published": "2026-03-11T00:07:47",
         "category": "general",
-        "short_summary": "优化代码：编译允许列表匹配器。"
+        "short_summary": "重构：编译允许列表匹配器。"
       },
       {
         "source": "rss",
@@ -98,7 +69,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Merge remote-tracking branch 'origin/main'</pre>",
         "published": "2026-03-10T23:55:30",
         "category": "general",
-        "short_summary": "合并远程跟踪分支“origin/main”"
+        "short_summary": "合并远程跟踪分支“origin/main”。"
       },
       {
         "source": "rss",
@@ -107,7 +78,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: clarify archive staging intent</pre>",
         "published": "2026-03-10T23:54:12",
         "category": "general",
-        "short_summary": "代码重构：澄清归档暂存意图。"
+        "short_summary": "代码重构：澄清存档暂存意图。"
       },
       {
         "source": "rss",
@@ -116,7 +87,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: split tar.bz2 extraction helpers</pre>",
         "published": "2026-03-10T23:53:32",
         "category": "general",
-        "short_summary": "重构：拆分tar.bz2解压缩辅助工具。"
+        "short_summary": "重构：拆分tar.bz2解压助手。"
       },
       {
         "source": "rss",
@@ -128,15 +99,6 @@
         "short_summary": "重构：重命名tar存档预检检查器。"
       },
       {
-        "source": "rss",
-        "title": "refactor: extract archive staging helpers",
-        "link": "https://github.com/openclaw/openclaw/commit/6565ae1857b1db906b9c429ec651b9d5f1eb0ea8",
-        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">refactor: extract archive staging helpers</pre>",
-        "published": "2026-03-10T23:52:31",
-        "category": "general",
-        "short_summary": "提取归档暂存帮助工具，优化代码结构。"
-      },
-      {
         "source": "youtube",
         "title": "OpenAI - Videos",
         "url": "https://www.youtube.com/@OpenAI/videos",
@@ -146,7 +108,7 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/videos",
-        "short_summary": "OpenAI视频资源，展示AI办公自动化解决方案。"
+        "short_summary": "OpenAI视频教程，介绍AI办公自动化工具。"
       },
       {
         "source": "youtube",
@@ -170,7 +132,45 @@
         "category": "general",
         "published": "2026-03-10",
         "link": "https://www.youtube.com/@OpenAI/shorts",
-        "short_summary": "OpenAI 的 Shorts 功能实现办公自动化。"
+        "short_summary": "OpenAI推出 Shorts 功能，实现办公自动化。"
+      }
+    ],
+    "skill": [
+      {
+        "source": "rss",
+        "title": "fix: harden subagent control boundaries",
+        "link": "https://github.com/openclaw/openclaw/commit/aad014c7c1fa3db5d9634c7f3ed781e3c7c012e5",
+        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: harden subagent control boundaries</pre>",
+        "published": "2026-03-11T01:44:38",
+        "category": "skill",
+        "short_summary": "加强子代理控制边界安全。"
+      },
+      {
+        "source": "rss",
+        "title": "fix(security): restrict leaf subagent control scope",
+        "link": "https://github.com/openclaw/openclaw/commit/ecdbd8aa523d25f5da41d3984bfca72612628a95",
+        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): restrict leaf subagent control scope</pre>",
+        "published": "2026-03-11T01:12:22",
+        "category": "skill",
+        "short_summary": "修复安全漏洞：限制子代理控制范围。"
+      },
+      {
+        "source": "rss",
+        "title": "Infra: extract backup and plugin path helpers",
+        "link": "https://github.com/openclaw/openclaw/commit/3ba64916599b57978c42aafd2857d4e4fdb44d9c",
+        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">Infra: extract backup and plugin path helpers</pre>",
+        "published": "2026-03-11T00:16:35",
+        "category": "skill",
+        "short_summary": "Infra 提供备份和插件路径辅助工具。"
+      },
+      {
+        "source": "rss",
+        "title": "SecretRef: harden custom/provider secret persistence and reuse (#42554)",
+        "link": "https://github.com/openclaw/openclaw/commit/36d2ae2a22353cf657ce1750d5370bfa4e1c99c9",
+        "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">SecretRef: harden custom/provider secret persistence and reuse (#42554)\n\n* Models: gate custom provider keys by usable secret semantics\n\n* Config: project runtime writes onto source snapshot\n\n* Models: prevent stale apiKey preservation for marker-managed providers\n\n* Runner: strip SecretRef marker headers from resolved models\n\n* Secrets: scan active agent models.json path in audit\n\n* Config: guard runtime-source projection for unrelated configs\n\n* Extensions: fix onboarding type errors in CI\n\n* Tests: align setup helper account-enabled expectation\n\n* Secrets audit: harden models.json file reads\n\n* fix: harden SecretRef custom/provider secret persistence (#42554) (thanks @joshavant)</pre>",
+        "published": "2026-03-10T23:55:10",
+        "category": "skill",
+        "short_summary": "SecretRef 加强自定义/提供商密钥持久性和重用。"
       }
     ],
     "bugfix": [
@@ -181,7 +181,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): bind system.run approvals to exact argv text</pre>",
         "published": "2026-03-11T01:25:31",
         "category": "bugfix",
-        "short_summary": "安全更新：system.run 审批绑定到精确的 argv 文本。"
+        "short_summary": "修复安全漏洞：将系统运行审批绑定到精确的argv文本。"
       },
       {
         "source": "rss",
@@ -190,7 +190,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(security): enforce target account configWrites</pre>",
         "published": "2026-03-11T01:24:36",
         "category": "bugfix",
-        "short_summary": "修复安全漏洞：强制执行目标账户配置写入。"
+        "short_summary": "安全更新：强制执行目标账户配置写入。"
       },
       {
         "source": "rss",
@@ -199,7 +199,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix(sandbox): pin fs-bridge staged writes</pre>",
         "published": "2026-03-11T01:15:47",
         "category": "bugfix",
-        "short_summary": "修复sandbox：固定fs-bridge暂存写入。"
+        "short_summary": "修复沙盒：固定fs-bridge缓存写入。"
       },
       {
         "source": "rss",
@@ -208,7 +208,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: fail closed for unresolved local gateway auth refs</pre>",
         "published": "2026-03-11T01:14:06",
         "category": "bugfix",
-        "short_summary": "修复：未解析本地网关认证引用的失败闭合问题。"
+        "short_summary": "修复：本地网关认证引用未解析时关闭失败。"
       },
       {
         "source": "rss",
@@ -217,7 +217,7 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: remove stale allowlist matcher cache</pre>",
         "published": "2026-03-11T00:00:04",
         "category": "bugfix",
-        "short_summary": "修复：删除过期的允许列表匹配器缓存。"
+        "short_summary": "修复：移除过期的允许列表匹配器缓存。"
       },
       {
         "source": "rss",
@@ -226,10 +226,10 @@
         "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">fix: avoid cron embedded lane deadlock</pre>",
         "published": "2026-03-10T23:56:21",
         "category": "bugfix",
-        "short_summary": "解决Cron嵌入式车道死锁问题。"
+        "short_summary": "修复：避免Cron嵌入式死锁问题。"
       }
     ]
   },
   "audio": "2026-03-10.mp3",
-  "generated_at": "2026-03-10T18:53:20.938887"
+  "generated_at": "2026-03-10T18:58:20.951468"
 }
