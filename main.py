@@ -109,6 +109,16 @@ async def run_profile(profile):
         }, f, indent=2, ensure_ascii=False)
     print(f"✅ 历史数据已保存: {history_file}")
 
+    # 4b. 保存纯文本摘要（用于验证）
+    text_summary_file = output_dir / f"{date_str}_summary.txt"
+    with open(text_summary_file, 'w', encoding='utf-8') as f:
+        f.write(f"📅 {date_str} - {profile['description']}\n\n")
+        for cat, entries in categorized.items():
+            f.write(f"== {cat} ==\n\n")
+            for entry in entries:
+                f.write(f"• {entry['title']}\n  {entry.get('short_summary','')}\n\n")
+    print(f"✅ 文本摘要已保存: {text_summary_file}")
+
     # 5. 生成详情页
     page_gen = PageGenerator(output_dir=str(output_dir))
     page_gen.generate_detail_page(

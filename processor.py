@@ -15,14 +15,19 @@ from llm_providers import (
 # 受众友好的摘要改写提示（保持原来风格）
 PROMPT_TEMPLATE = """请将以下内容改写成一段**简洁、易懂**的中文（30-70字），要求：
 - 忠实原意，不添加不存在的信息
-- 用生活化语言，避免“修复”“重构”“增强”等黑话
+- 用生活化语言，避免"修复""重构""增强"等黑话
 - 如果原文提到用户的好处（更安全、更方便、省时），请保留
 - 如果原文偏技术，请提炼一句通俗说明
-- 不要主动加入“OpenClaw”“ChatGPT”等工具名（除非原文出现）
+- 不要主动加入"OpenClaw""ChatGPT"等工具名（除非原文出现）
 
 {source_text}
 
-直接输出改写后的摘要："""
+请严格按 **JSON 格式** 输出，只包含一个字段：
+{
+  "summary": "你的总结"
+}
+
+不要输出任何其他内容（包括思考过程、解释、markdown 标记）。"""
 
 class ContentProcessor:
     def __init__(self, providers: list = None):
@@ -129,7 +134,22 @@ class ContentProcessor:
         for provider in self.providers:
             try:
                 summary = provider.summarize(title, content, PROMPT_TEMPLATE)
-                print(f"✅ 摘要生成成功 ({provider.name()}): {entry['title'][:40]}...")
+                # 后处理：清理可能的 ANSWER: 前缀和思考内容
+                if summary:
+                    # 去除 ANSWER: 前缀
+                    low = summary.lower()
+                    if low.startswith('answer:'):
+                        summary = summary[len('answer:'):].lstrip()
+                    # 如果以思考关键词开头，尝试提取最后一句
+                    thinking_prefixes = ['用户', '让我', '需要', '我先', '想想', '但', '不过', '所以', '因此']
+                    if any(low.startswith(kp) or summary.startswith(kp) for kp in thinking_prefixes):
+                        # 找最后一个句号、问号或感叹号
+                        for sep in ['。', '？', '！']:
+                            idx = summary.rfind(sep)
+                            if idx != -1 and idx < len(summary) - 1:
+                                summary = summary[idx+1:].strip()
+                                break
+                print(f"✅ 摘要生成成功 ({provider.name()}: {summary[:50]}...)")
                 return summary
             except Exception as e:
                 print(f"⚠️ {provider.name()} 失败: {str(e)[:100]}")

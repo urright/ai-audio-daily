@@ -1,1 +1,509 @@
-[]
+[
+  {
+    "source": "rss",
+    "title": "Improving instruction hierarchy in frontier LLMs",
+    "link": "https://openai.com/index/instruction-hierarchy-challenge",
+    "summary": "IH-Challenge trains models to prioritize trusted instructions, improving instruction hierarchy, safety steerability, and resistance to prompt injection attacks.",
+    "published": "2026-03-10T11:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "New ways to learn math and science in ChatGPT",
+    "link": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt",
+    "summary": "ChatGPT introduces interactive visual explanations for math and science, helping students explore formulas, variables, and concepts in real time.",
+    "published": "2026-03-10T10:00:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "This Is the Next Wave of Political Fundraising",
+    "link": "https://www.wired.com/story/this-is-the-next-wave-of-political-fundraising/",
+    "summary": "In Discord servers and Instagram DMs, content creators are organizing, turning followings in the millions into millions of dollars in political giving.",
+    "published": "2026-03-11T15:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Meta Is Developing 4 New Chips to Power Its AI and Recommendation Systems",
+    "link": "https://www.wired.com/story/meta-unveils-four-new-chips-to-power-its-ai-and-recommendation-systems/",
+    "summary": "The MTIA processors are the tech giant’s latest attempt to build its own AI hardware, even as it continues spending billions on gear from industry leaders like Nvidia.",
+    "published": "2026-03-11T14:23:05",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "This Digital Picture Frame Wants to Bring People Closer to a Holographic Future",
+    "link": "https://www.wired.com/story/looking-glass-musubi/",
+    "summary": "Brooklyn-based Looking Glass has been dabbling in 3D screens for nearly a decade. It's finally launching Musubi, an AI-powered holographic frame to bring your photos and videos to life.",
+    "published": "2026-03-11T13:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Meta Ramps Up Efforts to Disrupt Industrialized Scamming",
+    "link": "https://www.wired.com/story/meta-ramps-up-efforts-to-disrupt-industrialized-scamming/",
+    "summary": "Meta removed 10.9 million Facebook and Instagram accounts linked to “criminal scam centers” last year, the company announced on Wednesday.",
+    "published": "2026-03-11T12:01:28",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "The Fort Strength Training Wearable Tracks Your Sets (2026)",
+    "link": "https://www.wired.com/story/fort-strength-training-wearable-launch/",
+    "summary": "You don’t have to be a gym bro to get strong. Three ex-Tesla engineers made a beautiful bar velocity tracker for every kind of weight lifter.",
+    "published": "2026-03-11T12:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Nick Clegg Doesn’t Want to Talk About Superintelligence",
+    "link": "https://www.wired.com/story/nick-clegg-ai-startup-efekta-superintelligence/",
+    "summary": "After leaving Meta last year, the former deputy prime minister of the UK is charting a new path in the AI industry that has nothing to do with AGI.",
+    "published": "2026-03-11T12:00:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Best Indoor Garden Systems: We’ve Been Testing All Year (2026)",
+    "link": "https://www.wired.com/gallery/best-indoor-gardening-systems/",
+    "summary": "Grow a backyard’s worth of greens and vegetables in your house with a vertical hydroponic garden. Here are a few that might be worth the investment.",
+    "published": "2026-03-11T11:36:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Teens Are Using AI-Fueled ‘Slander Pages’ to Mock Their Teachers",
+    "link": "https://www.wired.com/story/teens-are-using-ai-fueled-slander-pages-to-mock-their-teachers/",
+    "summary": "Viral student-run TikTok and Instagram accounts are using AI to make memes of school faculty comparing them to figures like Jeffrey Epstein and Benjamin Netanyahu.",
+    "published": "2026-03-11T11:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Louis Theroux on the Manosphere: ‘It’s Highly Profitable to Be a Dick on the Internet’",
+    "link": "https://www.wired.com/story/louis-theroux-on-the-manosphere-its-highly-profitable-to-be-a-dick-on-the-internet/",
+    "summary": "With the release of his Netflix documentary Inside the Manosphere, the director talked to WIRED about why so many young men are drawn to toxic influencers.",
+    "published": "2026-03-11T10:30:00",
+    "category": "release"
+  },
+  {
+    "source": "rss",
+    "title": "Fujifilm Instax Evo Cinema Review: Retro Video Fun",
+    "link": "https://www.wired.com/review/fujifilm-instax-evo-cinema/",
+    "summary": "The latest Instax camera embraces video with a retro cine design and effects-laden video clips that you can share online.",
+    "published": "2026-03-11T10:30:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Inside OpenAI’s Race to Catch Up to Claude Code",
+    "link": "https://www.wired.com/story/openai-codex-race-claude-code/",
+    "summary": "Why is the biggest name in AI late to the AI coding revolution?",
+    "published": "2026-03-11T10:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Pulling Espresso by Hand Is More Fun Than Pushing a Button",
+    "link": "https://www.wired.com/story/flair-signature/",
+    "summary": "A manual espresso machine proves the best coffee-brewing tech is sometimes analog.",
+    "published": "2026-03-11T09:32:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Rally Orbital Massager Review: The Oscillating Revolution",
+    "link": "https://www.wired.com/review/rally-orbital-massager/",
+    "summary": "There are some minor drawbacks, but the Rally massager stands out as the lone circular massager in a sea of percussive heads.",
+    "published": "2026-03-11T09:30:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "A Certified Sleep Coach Shares the Sleep Week Deals She’s Adding to Cart (2026)",
+    "link": "https://www.wired.com/story/sleep-week-deals-2026/",
+    "summary": "From mattresses to sateen sheets, these exclusive deals on my personal picks can help you upgrade your sleep for less.",
+    "published": "2026-03-11T09:03:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Technology Is Reshaping Sleep Apnea Treatment",
+    "link": "https://www.wired.com/story/sleep-apnea-treatment-tech/",
+    "summary": "For decades, cumbersome CPAP machines have been the primary way to help people with sleep apnea. A range of new options has recently come into focus.",
+    "published": "2026-03-11T08:00:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "What to Do in Chicago If You’re Here for Business (2026)",
+    "link": "https://www.wired.com/story/the-wired-guide-to-chicago-for-business-travelers/",
+    "summary": "Where to lock in, power down, and actually enjoy your business trip.",
+    "published": "2026-03-11T03:56:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Trump Administration Won’t Rule Out Further Action Against Anthropic",
+    "link": "https://www.wired.com/story/trump-administration-refuses-to-say-it-wont-take-further-action-against-anthropic/",
+    "summary": "The White House is preparing an executive order targeting the AI startup, even as its earlier actions against the company face a major test in court.",
+    "published": "2026-03-11T01:41:42",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Pete Hegseth Is Pushing Defense Employees to Volunteer With DHS",
+    "link": "https://www.wired.com/story/pete-hegseth-is-pushing-defense-employees-to-volunteer-for-dhs/",
+    "summary": "The defense secretary has made clear that Pentagon managers are to encourage workers, including civilians, to volunteer to assist in the administration’s immigration crackdown.",
+    "published": "2026-03-10T20:06:45",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Anker’s Discounted Power Station Can Power Your Next Camping Trip",
+    "link": "https://www.wired.com/story/anker-solix-c1000-spring-deal/",
+    "summary": "Go off-grid camping for a long weekend with my favorite portable power station from Anker. It’s on sale.",
+    "published": "2026-03-10T18:55:32",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Interstellar Comet 3I/Atlas Has Another Surprise: It’s Full of Alcohol",
+    "link": "https://www.wired.com/story/interstellar-comet-3i-atlas-has-another-surprise-its-full-of-alcohol/",
+    "summary": "Analysis of the tail of 3I/Atlas reveals that it contains an anomalous proportion of methanol, a class of alcohol used in fuels.",
+    "published": "2026-03-10T18:48:25",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "DHS Ousts CBP Privacy Officers Who Questioned ‘Illegal’ Orders",
+    "link": "https://www.wired.com/story/cbp-privacy-threshold-analysis-foia/",
+    "summary": "Department of Homeland Security leaders removed top privacy officers who objected to mislabeling government records to block their public release, WIRED has learned.",
+    "published": "2026-03-10T18:23:28",
+    "category": "release"
+  },
+  {
+    "source": "rss",
+    "title": "Our Favorite Earbuds for Samsung Owners Are on Sale",
+    "link": "https://www.wired.com/story/samsung-galaxy-buds-fe-deal-326/",
+    "summary": "The Samsung Galaxy Buds 3 FE are a great pairing for anyone with a Galaxy phone.",
+    "published": "2026-03-10T17:50:54",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Fake AI Content About the Iran War Is All Over X",
+    "link": "https://www.wired.com/story/fake-ai-content-about-the-iran-war-is-all-over-x/",
+    "summary": "X’s Grok is failing to accurately verify video footage from the Iran conflict and is sharing its own AI-generated images about the war.",
+    "published": "2026-03-10T16:45:47",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "A Trumpworld Events Company Is Raking In Millions in Federal Contracts",
+    "link": "https://www.wired.com/story/they-helped-plan-the-january-6-rally-now-their-events-company-is-raking-in-millions-in-government-contracts/",
+    "summary": "The Trump administration has awarded Event Strategies several contracts—including one that could be worth up to $100 million—with little competition, according to federal filings.",
+    "published": "2026-03-10T15:40:18",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "GPS Attacks Near Iran Are Wreaking Havoc on Delivery and Mapping Apps",
+    "link": "https://www.wired.com/story/gps-attacks-near-iran-are-wreaking-havoc-on-delivery-and-mapping-apps/",
+    "summary": "Delivery apps are glitching and navigation routes are changing abruptly thanks to electronic warfare disrupting the satellite signals that power everything from missiles to your ride home.",
+    "published": "2026-03-10T15:22:35",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "I Used Google’s New Gemini-Powered ‘Help Me Create’ Tool in Docs. It’s Great at Corporate-Speak",
+    "link": "https://www.wired.com/story/google-gemini-workspace-ai-tools-hands-on/",
+    "summary": "Google has injected Docs, Drive, Sheets, and Slides with its Gemini assistant, adding new features that can pull information from your emails and the web to help you draft content. I gave it a whirl.",
+    "published": "2026-03-10T13:00:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Apple MacBook Neo Review: Delicious, Low-Hanging Fruit",
+    "link": "https://www.wired.com/review/apple-macbook-neo/",
+    "summary": "At $599, the MacBook Neo is Apple’s first budget laptop. For the most part, Apple cut corners in the right places and made a MacBook its intended buyers will adore.",
+    "published": "2026-03-10T13:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "What’s the Best iPhone to Buy or Avoid Right Now? (2026)",
+    "link": "https://www.wired.com/gallery/iphone-buying-guide/",
+    "summary": "The iPhone 17e is here. Here are all the details on Apple’s smartphones to help you find the right model, whether that’s the ultralight iPhone Air or the orange iPhone 17 Pro.",
+    "published": "2026-03-10T12:30:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Some People Are Too Sleepy to Make Fancy Coffee. For Them, There’s the Keurig K-Cafe",
+    "link": "https://www.wired.com/story/keurig-k-cafe-smart-rave/",
+    "summary": "If convenient coffee is what you seek, this coffee machine is worth every inch of counter space.",
+    "published": "2026-03-10T12:10:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "8 Best Cheap Phones (2026), Tested and Reviewed",
+    "link": "https://www.wired.com/story/best-cheap-phones/",
+    "summary": "There’s little reason to pay top dollar for a smartphone. These iPhones and Android devices—ranging from $100 to $600—stood up to WIRED’s testing.",
+    "published": "2026-03-10T11:30:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "The Best Streaming Bundles and Streaming Deals of March 2026",
+    "link": "https://www.wired.com/story/best-streaming-deals-and-streaming-bundles/",
+    "summary": "Here are the current best bundles from the most popular services.",
+    "published": "2026-03-10T11:06:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "How Can a Locomotive Pull a Long Train That’s Much Heavier?",
+    "link": "https://www.wired.com/story/how-can-a-locomotive-pull-a-train-thats-much-heavier/",
+    "summary": "For railroads, it’s all about managing static and kinetic friction.",
+    "published": "2026-03-10T11:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Use Microsoft PC Manager to Speed Up Your Windows 11 Computer",
+    "link": "https://www.wired.com/story/microsoft-pc-manager-speed-up-windows-11/",
+    "summary": "Can you really get a Windows PC running like new again? Using this free tool from Microsoft, you can get pretty close.",
+    "published": "2026-03-10T10:30:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "How to Responsibly Dispose of Your Electronics (2026)",
+    "link": "https://www.wired.com/story/how-to-responsibly-dispose-electronics/",
+    "summary": "Get rid of old, broken, and unused devices—even Lightning cables—without adding to the e-waste problem.",
+    "published": "2026-03-10T10:30:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Wiim Amp Ultra Review: A Fantastic Streaming Amp With TV Input",
+    "link": "https://www.wired.com/review/wiim-amp-ultra/",
+    "summary": "This amazing Sonos Amp alternative offers nearly everything you could want from a modern stereo.",
+    "published": "2026-03-10T10:00:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "11 Best Pillows: Tested For Side, Back, and Stomach Sleepers (2026)",
+    "link": "https://www.wired.com/gallery/best-pillows/",
+    "summary": "We’ve spent over a year testing the best pillows to support your noggin, whether you snooze on your side, on your back, or in a tangle of blankets.",
+    "published": "2026-03-10T09:37:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Hustlers are cashing in on China’s OpenClaw AI craze",
+    "link": "https://www.technologyreview.com/2026/03/11/1134179/china-openclaw-gold-rush/",
+    "summary": "Feng Qingyang had always hoped to launch his own company, but he never thought this would be how—or that the day would come this fast.&#160; Feng, a 27-year-old software engineer based in Beijing, started tinkering with OpenClaw, a popular new open-source AI tool that can take over a device and autonomously complete tasks for a&#8230;",
+    "published": "2026-03-11T12:46:21",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "How Pokémon Go is giving delivery robots an inch-perfect view of the world",
+    "link": "https://www.technologyreview.com/2026/03/10/1134099/how-pokemon-go-is-helping-robots-deliver-pizza-on-time/",
+    "summary": "Pokémon Go was the world’s first augmented-reality megahit. Released in 2016 by the Google spinout Niantic, the AR twist on the juggernaut Pokémon franchise fast became a global phenomenon. From Chicago to Oslo to Enoshima, players hit the streets in the urgent hope of catching a Jigglypuff or a Squirtle or (with a huge amount&#8230;",
+    "published": "2026-03-10T13:47:26",
+    "category": "release"
+  },
+  {
+    "source": "rss",
+    "title": "Bluetooth's latest wireless audio push could solve a connectivity problem we've all dealt with",
+    "link": "https://www.zdnet.com/article/bluetooth-special-interest-group-lossless-spatial-audio-development/",
+    "summary": "The Bluetooth Special Interest Group says it's improving on standard protocols for lossless and spatial audio. Here's how.",
+    "published": "2026-03-11T15:57:00",
+    "category": "bugfix"
+  },
+  {
+    "source": "rss",
+    "title": "8 powerful Apt commands I use to unlock hidden features - and why they're so handy",
+    "link": "https://www.zdnet.com/article/apt-package-manager-linux/",
+    "summary": "The Debian/Ubuntu package manager isn't just for installing and removing software. You'll find there are some other tricks up Apt's sleeve that you should know about.",
+    "published": "2026-03-11T15:47:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "I tried Zenclora, a super-fast Linux distro with zero bloat - and one truly special feature",
+    "link": "https://www.zdnet.com/article/zenclora-fast-linux-distro-zero-bloat-special-feature/",
+    "summary": "This Debian-based distribution is an absolute delight to use and relatively easy, with some minor caveats.",
+    "published": "2026-03-11T14:56:55",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "I was a phone addict: These 7 tricks stopped me scrolling and curbed my screen time - fast",
+    "link": "https://www.zdnet.com/article/how-to-reduce-screen-time-stop-scrolling-break-phone-addicton/",
+    "summary": "I went from 13 hours of screen time to about an hour a day on my phone. Here's how.",
+    "published": "2026-03-11T13:42:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "I switched password managers without losing a single login - here's how",
+    "link": "https://www.zdnet.com/article/how-to-switch-password-manager-without-losing-logins/",
+    "summary": "I safely moved all my saved logins to a new password manager. And you can too, quickly and easily.",
+    "published": "2026-03-11T13:01:11",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Another Linux distro has dropped KDE Plasma, and I'm not surprised to see why",
+    "link": "https://www.zdnet.com/article/kaos-linux-distro-replaces-kde-plasma-desktop-default/",
+    "summary": "The rolling release distro switches to Niri, a scrollable, tiling compositor that's better than you'd think. See why.",
+    "published": "2026-03-11T13:00:48",
+    "category": "release"
+  },
+  {
+    "source": "rss",
+    "title": "How to enable Advanced Protection on your Android phone - and why it's critical to do so",
+    "link": "https://www.zdnet.com/article/how-to-turn-on-advanced-protection-android-16-phone/",
+    "summary": "One of Google's most critical features is hidden behind a single setting. Turn it on to protect against theft, scams, spam, and more.",
+    "published": "2026-03-11T12:30:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "After using MacBook Neo, it's clear Windows needs to rethink its PC strategy (and fast)",
+    "link": "https://www.zdnet.com/article/the-macbook-neo-is-here-its-time-for-windows-to-adapt/",
+    "summary": "Apple's new $599 laptop will force Windows PCs and Chromebooks to respond in turn. That's a good thing.",
+    "published": "2026-03-11T12:01:11",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "How to fully back up your Windows PC for free (even if it's working properly today)",
+    "link": "https://www.zdnet.com/article/how-to-back-up-pc-clonezilla/",
+    "summary": "If you've ever had to deal with a dying computer, you know the challenge of ensuring you have a good backup. Here's how I use CloneZilla to do just that.",
+    "published": "2026-03-11T12:00:51",
+    "category": "tutorial"
+  },
+  {
+    "source": "rss",
+    "title": "A global investment scam is spreading across Facebook, WhatsApp, and more - what to look for",
+    "link": "https://www.zdnet.com/article/investment-scam-paid-social-media-ads/",
+    "summary": "This sophisticated online scam is spread via paid Meta ads and fake news stories. Here's how to spot it before it's too late.",
+    "published": "2026-03-11T11:51:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "We compared the MacBook Neo to its closest Windows and Chromebook rivals: by the specs",
+    "link": "https://www.zdnet.com/article/macbook-neo-alternatives/",
+    "summary": "If you've got some budget to spare and are platform-agnostic, let's walk through the myriad of Neo-like laptops available to you.",
+    "published": "2026-03-11T11:12:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "5 security tactics your business can't get wrong in the age of AI - and why they're critical",
+    "link": "https://www.zdnet.com/article/5-ways-to-ensure-great-security-in-an-age-of-ai/",
+    "summary": "Experts share how their organizations use policies and processes to protect data and adopt AI safely.",
+    "published": "2026-03-11T11:11:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "Whisker Litter-Robot 5 Pro review: This $900 litter box may be almost too high-tech for me",
+    "link": "https://www.zdnet.com/article/whisker-litter-robot-5-pro-review/",
+    "summary": "The new Whisker Litter-Robot 5 Pro saves you from scooping while also giving you peace of mind on your cat's advanced health data.",
+    "published": "2026-03-11T11:08:00",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "Google report: AI is accelerating cloud cyberattacks, and one weak link stands out",
+    "link": "https://www.zdnet.com/article/google-cloud-threat-report-third-party-software-ai-attacks/",
+    "summary": "Google's latest threat report warns that third-party tools are now prime targets for attackers - and businesses have only days to prepare defenses.",
+    "published": "2026-03-11T10:51:00",
+    "category": "skill"
+  },
+  {
+    "source": "rss",
+    "title": "How to turn off standby mode on your TV (and if it really cuts your power bill)",
+    "link": "https://www.zdnet.com/article/how-to-disable-standby-mode-on-your-tv/",
+    "summary": "Does unplugging your TV overnight actually save you electricity? Yes, but there's a way to get similar results with less effort.",
+    "published": "2026-03-11T10:48:00",
+    "category": "tutorial"
+  },
+  {
+    "source": "rss",
+    "title": "This portable SSD with NFC unlock is the most intuitive iPhone accessory I've tested",
+    "link": "https://www.zdnet.com/article/lexar-touchlock-portable-ssd-review/",
+    "summary": "The Lexar TouchLock Portable SSD uses the magic of NFC to unlock itself, and fits snugly on the back of most phones.",
+    "published": "2026-03-11T10:47:00",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "The best free VPNs of 2026: Expert tested and reviewed",
+    "link": "https://www.zdnet.com/article/best-free-vpn/",
+    "summary": "You don't have to compromise your privacy, security, or data when you use a free VPN -- as long as you pick the right one. Our guide lists the only trustworthy, free VPNs around today.",
+    "published": "2026-03-11T09:01:00",
+    "category": "tutorial"
+  },
+  {
+    "source": "rss",
+    "title": "The 10 most popular products ZDNET readers bought last month (including handy gadgets)",
+    "link": "https://www.zdnet.com/article/most-popular-products-zdnet-readers-bought-last-month-2026/",
+    "summary": "From thermal cameras to USB-C gear, these are the top tech gadgets and useful items our readers actually purchased last month.",
+    "published": "2026-03-11T09:00:41",
+    "category": "general"
+  },
+  {
+    "source": "rss",
+    "title": "MacBook Neo review: My biggest concern with Apple's near-perfect budget laptop",
+    "link": "https://www.zdnet.com/article/apple-macbook-neo-review/",
+    "summary": "Apple's new $599 MacBook Neo is a snappy 13-inch that feels a lot like its older siblings, but I can't help but wonder how it'll hold up after a few years.",
+    "published": "2026-03-11T00:00:50",
+    "category": "feature"
+  },
+  {
+    "source": "rss",
+    "title": "7 surprisingly useful ways to use ChatGPT's voice mode, from a former skeptic",
+    "link": "https://www.zdnet.com/article/chatgpt-voice-mode-tricks/",
+    "summary": "Voice Mode fabricated answers the last time I used it, but I tested it again to see if it's actually useful now.",
+    "published": "2026-03-11T00:00:36",
+    "category": "general"
+  },
+  {
+    "source": "youtube",
+    "title": "OpenAI - Videos",
+    "url": "https://www.youtube.com/@OpenAI/videos",
+    "duration": 0,
+    "uploader": "OpenAI",
+    "upload_date": "",
+    "category": "general"
+  },
+  {
+    "source": "youtube",
+    "title": "OpenAI - Live",
+    "url": "https://www.youtube.com/@OpenAI/streams",
+    "duration": 0,
+    "uploader": "OpenAI",
+    "upload_date": "",
+    "category": "general"
+  },
+  {
+    "source": "youtube",
+    "title": "OpenAI - Shorts",
+    "url": "https://www.youtube.com/@OpenAI/shorts",
+    "duration": 0,
+    "uploader": "OpenAI",
+    "upload_date": "",
+    "category": "general"
+  }
+]

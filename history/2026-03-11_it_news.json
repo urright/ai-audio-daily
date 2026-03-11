@@ -15,16 +15,7 @@
         "summary": "The MTIA processors are the tech giant’s latest attempt to build its own AI hardware, even as it continues spending billions on gear from industry leaders like Nvidia.",
         "published": "2026-03-11T14:23:05",
         "category": "feature",
-        "short_summary": "好的，用户让我把一段英文新闻改写成简洁易懂的中文摘要，有具体要求。先看看原文内容，标题是Meta在开发四款新芯片用于AI和推荐系统，正文提到MTIA处理器是Meta自己造AI硬件的最新尝试，虽然他们还在花大钱买英伟达的设备。\n\n用户要求30到70字，得控制字数。忠实原意不能加新信息，所以核心点就是Meta自己搞芯片，同时还在买别人的。生活化语言，避免黑话，像“处理器”“AI硬件”这些可能有点技术，得换成更日常的说法。\n\n原文提到用户好处了吗？好像没有直接说用户能得什么好处，只说了公司行为。那这部分可能不需要保留"
-      },
-      {
-        "source": "rss",
-        "title": "Sonos just launched 2 new speakers, with some subtle but useful upgrades",
-        "link": "https://www.zdnet.com/article/sonos-play-era-100-sl-news/",
-        "summary": "Sonos announces the Play and Era 100 SL speakers, giving new and existing customers even more modular options.",
-        "published": "2026-03-10T21:26:00",
-        "category": "feature",
-        "short_summary": "好的，用户让我把一段英文新闻改写成简洁易懂的中文，要求挺具体的。先看看原文，标题说Sonos推出了两款新音箱，有一些细微但实用的升级。正文提到Play和Era 100 SL这两款，给新旧用户更多模块化选择。\n\n用户的要求里强调要忠实原意，不能自己加信息。得注意原文有没有提到用户的好处，比如更安全、更方便、省时这些。但原文这里好像没直接说用户能得什么好处，只说了“modular options”模块化选项，可能意味着用户可以更灵活地搭配？不过用户要求如果原文提到好处才保留，这里没明确说，所以可能不需要硬加。\n\n还要避免黑话，像“"
+        "short_summary": "用户好处方面，原文没直接说，但自己造芯片"
       },
       {
         "source": "rss",
@@ -33,7 +24,16 @@
         "summary": "Google has injected Docs, Drive, Sheets, and Slides with its Gemini assistant, adding new features that can pull information from your emails and the web to help you draft content. I gave it a whirl.",
         "published": "2026-03-10T13:00:00",
         "category": "feature",
-        "short_summary": "嗯，用户想让我把一段英文内容改写成简洁易懂的中文摘要，有具体要求呢。看看原文……哦，是关于Google在办公软件里加入Gemini助手的事情。\n\n用户要求30到70字，要忠实原意，不能用那些技术黑话。如果原文提到用户好处要保留，技术内容要提炼成通俗说明。还不能主动加入工具名，除非原文出现。\n\n这段英文讲的是Google把Gemini助手集成到Docs、Drive这些办公软件里了，新功能可以从邮件和网上找信息来帮你起草内容，作者还试用了。\n\n用户的好处……嗯，应该是让写东西更方便吧？能自动找信息，省时间。技术部分就是AI助手集成到办公软件里"
+        "short_summary": "原文有Gemini，但用户说不要主动加入，所以得避免直接说Gemini，只说"
+      },
+      {
+        "source": "rss",
+        "title": "New ways to learn math and science in ChatGPT",
+        "link": "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt",
+        "summary": "ChatGPT introduces interactive visual explanations for math and science, helping students explore formulas, variables, and concepts in real time.",
+        "published": "2026-03-10T10:00:00",
+        "category": "feature",
+        "short_summary": "- 不要主动加入\"OpenClaw\"\"ChatGPT"
       }
     ],
     "general": [
@@ -47,7 +47,7 @@
         "category": "general",
         "published": "2026-03-11",
         "link": "https://www.youtube.com/@OpenAI/videos",
-        "short_summary": "好的，用户让我把一段内容改写成简洁易懂的中文，30到70字。先看看要求：要忠实原意，不能加新信息；用生活化语言，避免那些技术黑话；如果原文提到用户的好处，比如更安全、更方便、省时间，这些都得保留；如果原文偏技术，要提炼成一句通俗说明；还不能主动加入工具名，除非原文里有。\n\n现在看用户给的source_text，标题是\"OpenAI - Videos\"，但正文内容呢？用户只给了标题，没有其他内容。可能用户忘记贴正文了，或者正文就是标题？但标题太短，没法改写。可能是个错误，或者用户想让我根据标题来推测？但这样不行"
+        "short_summary": "在消息末尾，有“直接输出："
       },
       {
         "source": "youtube",
@@ -59,7 +59,7 @@
         "category": "general",
         "published": "2026-03-11",
         "link": "https://www.youtube.com/@OpenAI/streams",
-        "short_summary": "好的，用户给了一段要求，需要将提供的源文本改写成简洁易懂的中文摘要。不过这里有个问题，用户提供的{source_text}部分只显示了“标题：OpenAI - Live”，这看起来更像是一个标题而不是完整的内容。可能用户忘记粘贴正文了，或者正文就是空的。\n\n让我看看用户的具体要求：要改写30-70字，忠实原意，用生活化语言，避免技术黑话，保留用户好处，如果原文偏技术要提炼通俗说明，不要主动加入工具名。\n\n但现在的“标题：OpenAI - Live”太短了，根本没法展开成30-70字。这可能是用户操作失误。作为助手，我应该基于现有信息处理。这个标题暗示"
+        "short_summary": "这里标题有"
       },
       {
         "source": "youtube",
@@ -71,7 +71,7 @@
         "category": "general",
         "published": "2026-03-11",
         "link": "https://www.youtube.com/@OpenAI/shorts",
-        "short_summary": "好的，用户让我把一段内容改写成简洁易懂的中文，要求挺具体的。首先看看用户给的原文，但这里只显示了标题“OpenAI - Shorts”，没有具体内容。可能用户忘记贴正文了？不过根据要求，我得基于提供的source_text来改写，但这里source_text似乎只有标题。\n\n用户的要求包括：忠实原意、生活化语言、保留用户好处、技术内容要通俗、不主动加工具名。但原文只有标题，没有正文，这有点难办。可能用户误操作，或者source_text就是标题？但标题“OpenAI - Shorts”看起来像是一个系列或频道的名称，可能指的是OpenAI的短视频内容。\n\n考虑到用户强调“如果原文"
+        "short_summary": "这看起来像是一个标题或简短"
       }
     ]
   },
