@@ -8,7 +8,7 @@ from datetime import datetime
 from argparse import ArgumentParser
 
 from collector import DataCollector
-from processor import ContentProcessor
+from processor import ContentProcessor, OpenAIProvider, GroqProvider, OpenRouterProvider, OllamaProvider, HuggingFaceProvider, ArceeProvider, FallbackProvider
 from audio_generator import AudioGenerator
 from page_generator import PageGenerator
 from telegram_sender import TelegramSender
@@ -56,8 +56,31 @@ async def run_profile(profile):
         print("❌ 没有收集到新内容，跳过此 profile")
         return False
 
-    # 2. 处理
-    processor = ContentProcessor()
+    # 2. 处理 - 构建 providers（支持 profile 配置优先级）
+    def build_providers(profile):
+        provider_map = {
+            'openai': lambda: OpenAIProvider(),
+            'groq': lambda: GroqProvider(),
+            'openrouter': lambda: OpenRouterProvider(),
+            'ollama': lambda: OllamaProvider(),
+            'huggingface': lambda: HuggingFaceProvider(),
+            'arcee': lambda: ArceeProvider(),
+        }
+        default_order = ['openrouter', 'ollama', 'huggingface', 'arcee']
+        order = profile.get('llm_providers', default_order)
+        providers = []
+        for key in order:
+            if key in provider_map:
+                try:
+                    providers.append(provider_map[key]())
+                except Exception as e:
+                    print(f"⚠️ 跳过提供商 {key}: {e}")
+        if not providers:
+            providers = [FallbackProvider()]
+        return providers
+
+    providers = build_providers(profile)
+    processor = ContentProcessor(providers=providers)
     categorized = processor.process_all(entries)
     total_items = sum(len(v) for v in categorized.values())
 

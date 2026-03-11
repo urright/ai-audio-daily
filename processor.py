@@ -1,25 +1,47 @@
-import openai
-from dotenv import load_dotenv
-import os
 import json
 from datetime import datetime
 import re
+from llm_providers import (
+    LLMProvider,
+    OpenAIProvider,
+    GroqProvider,
+    OpenRouterProvider,
+    OllamaProvider,
+    HuggingFaceProvider,
+    ArceeProvider,
+    FallbackProvider
+)
 
-load_dotenv()
+# 受众友好的摘要改写提示（保持原来风格）
+PROMPT_TEMPLATE = """请将以下内容改写成一段**简洁、易懂**的中文（30-70字），要求：
+- 忠实原意，不添加不存在的信息
+- 用生活化语言，避免“修复”“重构”“增强”等黑话
+- 如果原文提到用户的好处（更安全、更方便、省时），请保留
+- 如果原文偏技术，请提炼一句通俗说明
+- 不要主动加入“OpenClaw”“ChatGPT”等工具名（除非原文出现）
+
+{source_text}
+
+直接输出改写后的摘要："""
 
 class ContentProcessor:
-    def __init__(self, api_key=None, model=None, use_groq=False):
-        if use_groq or os.getenv('GROQ_API_KEY'):
-            self.client = openai.OpenAI(
-                api_key=api_key or os.getenv('GROQ_API_KEY'),
-                base_url="https://api.groq.com/openai/v1"
-            )
-            self.model = model or "llama-3.3-70b-versatile"
-            self.provider = "groq"
+    def __init__(self, providers: list = None):
+        """
+        初始化内容处理器
+        providers: 按优先级排列的 LLMProvider 列表，例如 [OpenRouterProvider(...), OllamaProvider(), FallbackProvider()]
+                    如果为 None，则使用默认混合策略（不含 OpenAI/Groq）
+        """
+        if providers is None:
+            # 默认混合策略：OpenRouter → Ollama → HuggingFace → Arcee → Fallback
+            self.providers = [
+                OpenRouterProvider(),
+                OllamaProvider(),
+                HuggingFaceProvider(),
+                ArceeProvider(),
+                FallbackProvider()
+            ]
         else:
-            self.client = openai.OpenAI(api_key=api_key or os.getenv('OPENAI_API_KEY'))
-            self.model = model or "gpt-4o-mini"
-            self.provider = "openai"
+            self.providers = providers
 
     def parse_date(self, entry):
         date_str = entry.get('published')
@@ -93,38 +115,29 @@ class ContentProcessor:
         return False
 
     def summarize(self, entry):
-        """生成忠实于原文的通俗摘要，避免强行植入品牌"""
+        """使用混合策略生成摘要"""
         title = entry.get('title', '').strip()
         raw = entry.get('summary', entry.get('description', '')).strip()
 
         if raw and len(raw) > 20:
-            source_text = f"标题：{title}\n原文：{raw}"
+            content = raw
         else:
-            source_text = f"标题：{title}"
+            content = ""
 
-        prompt = f"""请将以下内容改写成一段**简洁、易懂**的中文（30-70字），要求：
-- 忠实原意，不添加不存在的信息
-- 用生活化语言，避免“修复”“重构”“增强”等黑话
-- 如果原文提到用户的好处（更安全、更方便、省时），请保留
-- 如果原文偏技术，请提炼一句通俗说明
-- 不要主动加入“OpenClaw”“ChatGPT”等工具名（除非原文出现）
+        # 按优先级尝试每个提供商
+        last_error = None
+        for provider in self.providers:
+            try:
+                summary = provider.summarize(title, content, PROMPT_TEMPLATE)
+                print(f"✅ 摘要生成成功 ({provider.name()}): {entry['title'][:40]}...")
+                return summary
+            except Exception as e:
+                print(f"⚠️ {provider.name()} 失败: {str(e)[:100]}")
+                last_error = e
+                continue
 
-{source_text}
-
-直接输出改写后的摘要："""
-
-        try:
-            response = self.client.chat.completions.create(
-                model=self.model,
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.5,
-                max_tokens=150
-            )
-            summary = response.choices[0].message.content.strip().strip('"').strip()
-            return summary if summary else self._simple_fallback(title)
-        except Exception as e:
-            print(f"❌ Summarize error: {e}")
-            return self._simple_fallback(title)
+        # 如果全部失败（理论上不会，因为有 FallbackProvider），使用最简方式
+        return self._simple_fallback(title)
 
     def _simple_fallback(self, title):
         cleaned = re.sub(r'^(fix|feat|feature|refactor|chore|test|docs|style|perf|build|ci|security|release|announce):\s*', '', title, flags=re.IGNORECASE)
@@ -189,8 +202,9 @@ class ContentProcessor:
         return categorized
 
 if __name__ == "__main__":
+    # 测试混合策略
+    processor = ContentProcessor()
     with open("data/latest_cache.json", 'r', encoding='utf-8') as f:
         entries = json.load(f)
-    processor = ContentProcessor()
     result = processor.process_all(entries[:3])
     print(json.dumps(result, indent=2, ensure_ascii=False))
